@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title" data-en="Gazaria Land Services - Simple and Reliable Help for Land and Property">গজারিয়া ভূমি সেবা - জমি ও সম্পত্তি সংক্রান্ত সহজ ও নির্ভরযোগ্য সহায়তা</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="গজারিয়া ভূমি সেবা - আপনার জমি ও সম্পত্তির সকল আইনি ও দাপ্তরিক সহায়তার বিশ্বস্ত মাধ্যম।" data-en-desc="Gazaria Land Services - Trusted medium for all legal and official assistance regarding your land and property.">
+    <meta name="keywords" content="Gazaria Land Services, Gazaria Land, gazaria land service, gazaria, Gazaria, গজারিয়া ভূমি সেবা, গজারিয়া ভূমি অফিস, নামজারি, খতিয়ান, গগারিয়া,ভূমি অফিস, ভূমি সেবা">
+    
+    <!-- Open Graph (OG) Tags -->
+    <meta property="og:title" content="গজারিয়া ভূমি সেবা - জমি ও সম্পত্তি সংক্রান্ত সহজ ও নির্ভরযোগ্য সহায়তা" data-en-og="Gazaria Land Services - Simple and Reliable Help for Land and Property">
+    <meta property="og:description" content="গজারিয়া ভূমি সেবা - আপনার জমি ও সম্পত্তির সকল আইনি ও দাপ্তরিক সহায়তার বিশ্বস্ত মাধ্যম।" data-en-og-desc="Gazaria Land Services - Trusted medium for all legal and official assistance regarding your land and property.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="Favicon Icon.jpeg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            deep: '#0d5c3a',
+                            emerald: '#198754',
+                            gold: '#f39c12',
+                            goldHover: '#e08e0b',
+                            lightBg: '#f8f9fa',
+                            darkText: '#1f2937'
+                        }
+                    },
+                    fontFamily: {
+                        bengali: ['Hind Siliguri', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-pattern {
+            background-color: #0d5c3a;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-brand-gold selection:text-white flex flex-col min-h-screen">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                 <!-- Brand Logo -->
+                <a href="/" onclick="navigateTo(event, 'home')" class="flex items-center gap-2 sm:gap-3 group">
+                    <div class="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] shrink-0 rounded-xl bg-brand-white flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                        <img src="Gazaria Land service Logo.svg" alt="Gazaria Land Services Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <span id="brand-title" class="text-base sm:text-2xl font-bold tracking-tight text-brand-deep block leading-tight truncate max-w-[170px] sm:max-w-none" data-en="Gazaria Land Services">গজারিয়া ভূমি সেবা</span>
+                        <span class="text-[10px] sm:text-xs text-gray-500 font-medium">Gazaria Land Services</span>
+                    </div>
+                </a> 
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-gray-700">
+                    <a href="/" onclick="navigateTo(event, 'home')" class="hover:text-brand-emerald transition-colors" data-en="Home">হোম</a>
+                    <a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-emerald transition-colors" data-en="Services">পরিষেবা</a>
+                    <a href="/about" onclick="navigateTo(event, 'about')" class="hover:text-brand-emerald transition-colors" data-en="About Us">আমাদের সম্পর্কে</a>
+                    <a href="/why-us" onclick="navigateTo(event, 'why-us')" class="hover:text-brand-emerald transition-colors" data-en="Why Us">কেন গজারিয়া ভূমি সেবা</a>
+                    <a href="/how-it-works" onclick="navigateTo(event, 'how-it-works')" class="hover:text-brand-emerald transition-colors" data-en="Method">পদ্ধতি</a>
+                    <a href="/contact" onclick="navigateTo(event, 'contact')" class="hover:text-brand-emerald transition-colors" data-en="Contact">যোগাযোগ</a>
+                </nav>
+
+                <!-- Action Buttons Desktop -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <!-- Search Icon -->
+                    <button onclick="openModal()" class="p-2 text-brand-emerald hover:bg-gray-100 rounded-lg">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </button>
+
+                    <!-- Language Switcher Toggle -->
+                    <div class="flex items-center bg-gray-100 rounded-lg p-1">
+                        <button id="langBn" onclick="setLanguage('bn')" class="px-3 py-1 text-sm font-bold bg-brand-emerald text-white rounded-md shadow-sm transition-all duration-300">বাং</button>
+                        <button id="langEn" onclick="setLanguage('en')" class="px-3 py-1 text-sm font-bold text-gray-600 hover:text-brand-emerald rounded-md transition-all duration-300">EN</button>
+                    </div>
+
+                    <a href="https://wa.me/+8801302601212?text=আসসালামু আলাইকুম,%20আমি%20ভূমি%20বন্ধু%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span data-en="WhatsApp">হোয়াটসঅ্যাপ</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-1.5 lg:hidden">
+                    <button onclick="openModal()" class="p-2 text-brand-emerald hover:bg-gray-100 rounded-lg">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+                    
+                    <!-- Language Switcher Toggle (Mobile) -->
+                    <div class="flex items-center bg-gray-100 rounded-lg p-1">
+                        <button id="langBnMobile" onclick="setLanguage('bn')" class="px-2 py-1 text-xs font-bold bg-brand-emerald text-white rounded-md shadow-sm transition-all duration-300">বাং</button>
+                        <button id="langEnMobile" onclick="setLanguage('en')" class="px-2 py-1 text-xs font-bold text-gray-600 rounded-md transition-all duration-300">EN</button>
+                    </div>
+
+                    <button id="mobileMenuBtn" class="p-2 text-gray-700 hover:text-brand-deep focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="/" onclick="navigateTo(event, 'home'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium border-b border-gray-50" data-en="Home">হোম</a>
+            <a href="/services" onclick="navigateTo(event, 'services'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium border-b border-gray-50" data-en="Services">পরিষেবা</a>
+            <a href="/about" onclick="navigateTo(event, 'about'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium border-b border-gray-50" data-en="About Us">আমাদের সম্পর্কে</a>
+            <a href="/why-us" onclick="navigateTo(event, 'why-us'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium border-b border-gray-50" data-en="Why Us">কেন গজারিয়া ভূমি সেবা</a>
+            <a href="/how-it-works" onclick="navigateTo(event, 'how-it-works'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium border-b border-gray-50" data-en="Method">পদ্ধতি</a>
+            <a href="/contact" onclick="navigateTo(event, 'contact'); toggleMobileMenu();" class="block py-2 text-gray-700 hover:text-brand-emerald font-medium" data-en="Contact">যোগাযোগ</a>
+            
+            <div class="pt-2 space-y-2">
+                <a href="https://wa.me/+8801302601212?text=আসসালামু আলাইকুম,%20আমি%20ভূমি%20বন্ধু%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="w-full py-3 rounded-xl bg-emerald-600 text-white font-semibold flex justify-center items-center gap-2 shadow">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span data-en="WhatsApp Chat">হোয়াটসঅ্যাপে চ্যাট করুন</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="hero-pattern text-white py-16 md:py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-brand-gold text-sm font-medium">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span data-en="100% Secure and Legal Assistance" style="font-family: 'Hind Siliguri', sans-serif; font-weight: 700;">১০০% নিরাপদ ও আইনি সহায়তা</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                            <span data-en="Land and Property Assistance —">জমি ও সম্পত্তি সংক্রান্ত সহায়তা —</span> <span class="text-brand-gold" data-en="Your Trusted Land Partner">আপনার জমির বিশ্বস্ত সহায়ক</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-en="For land mutation, name issuance, ledger-dag information, land measurement (Amin), registration, and legal advice, there is no need to run around government offices unnecessarily. We are by your side.">
+                            জমির মিউটেশন, নামজারি, খতিয়ান-দাগের তথ্য, জমি মাপজোক (আমিন), রেজিস্ট্রেশন ও আইনগত পরামর্শের জন্য এখন আর সরকারি অফিসে অযথা দৌড়াদৌড়ি নয়। আমরা আপনার পাশে আছি।
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                            <a href="/inquiry" onclick="navigateTo(event, 'inquiry')" class="px-8 py-4 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-gray-900 font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl text-center flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span data-en="Online Inquiry">অনলাইন অনুসন্ধান করুন</span>
+                            </a>
+                            <a href="https://wa.me/+8801302601212?text=আসসালামু আলাইকুম,%20জরুরি%20পরামর্শের%20জন্য%20যোগাযোগ%20করছি।" target="_blank" class="px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl text-center flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span data-en="Talk Directly">সরাসরি কথা বলুন</span>
+                            </a>
+                        </div>
+
+                        <!-- Highlights Quick Stats -->
+                        <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0 text-center">
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-bold text-brand-gold" data-en="100%">১০০%</p>
+                                <p class="text-xs sm:text-sm text-gray-300" data-en="Transparent Process">স্বচ্ছ প্রক্রিয়া</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-bold text-brand-gold" data-en="8+">৮+</p>
+                                <p class="text-xs sm:text-sm text-gray-300" data-en="Special Services">বিশেষ পরিষেবা</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-bold text-brand-gold" data-en="24/7">২৪/৭</p>
+                                <p class="text-xs sm:text-sm text-gray-300" data-en="Customer Support">গ্রাহক সহায়তা</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Quick Inquiry Card -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-card text-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-white/40">
+                            <div class="text-center mb-6">
+                                <span class="text-brand-deep font-bold text-xs uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100" data-en="Instant Solution">তাৎক্ষণিক সমাধান</span>
+                                <h3 class="text-2xl font-bold text-gray-900 mt-2" data-en="Easy Information Submission Form">সহজ তথ্য জমা ফর্ম</h3>
+                                <p class="text-sm text-gray-600" data-en="Send your questions to us, we will help on WhatsApp">আপনার প্রশ্ন আমাদের কাছে পাঠান, আমরা হোয়াটসঅ্যাপে সাহায্য করব</p>
+                            </div>
+
+                            <form onsubmit="submitQuickHeroForm(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Your Name *">আপনার নাম *</label>
+                                    <input type="text" id="heroName" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="উদা: সাজ্জাদ হোসাইন" data-en-placeholder="e.g. Sajjad Hossain">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Mobile Number *">মোবাইল নম্বর *</label>
+                                    <input type="tel" id="heroPhone" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Required Service">প্রয়োজনীয় পরিষেবা</label>
+                                    <select id="heroService" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm bg-white">
+                                        <option value="জমি মিউটেশন / নামজারি" data-en="Land Mutation / Name Issuance">জমি মিউটেশন / নামজারি</option>
+                                        <option value="ভূমি রেকর্ড ও দাগ-খতিয়ান" data-en="Land Record & Dag-Khatian">ভূমি রেকর্ড ও দাগ-খতিয়ান</option>
+                                        <option value="আমিন ও জমি মাপজোক" data-en="Amin & Land Measurement">আমিন ও জমি মাপজোক</option>
+                                        <option value="আইনি সহায়তা ও যাচাই" data-en="Legal Assistance & Verification">আইনি সহায়তা ও যাচাই</option>
+                                        <option value="অন্যান্য" data-en="Other Assistance">অন্যান্য সহায়তা</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="w-full py-3 px-6 rounded-xl bg-brand-deep hover:bg-emerald-900 text-white font-bold transition duration-300 shadow-md flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                                    <span data-en="Get Solution on WhatsApp">হোয়াটসঅ্যাপে সমাধান পান</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Our Services">আমাদের সেবাসমূহ</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="8 Major Assistances of Gazaria Land Services">গজারিয়া ভূমি সেবার ৮টি প্রধান সহায়তা</h2>
+                    <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                    <p class="text-gray-600 mt-4 text-base sm:text-lg" data-en="We are always ready to provide easy, legal, and fast solutions to all complex land-related problems.">জমি সংক্রান্ত সমস্ত জটিল সমস্যার সহজ, আইনসম্মত ও দ্রুত সমাধান পেতে আমরা সর্বদা প্রস্তুত।</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="1. Land Registration">১. জমি রেজিস্ট্রেশন</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Advice on purchasing-selling deed preparation, accurate stamp duty calculation, and deed submission at the registry office.">ক্রয়-বিক্রয় দলিল তৈরি, সঠিক স্ট্যাম্প ডিউটি হিসেব এবং দলিল রেজিস্ট্রি অফিসে জমা সংক্রান্ত পরামর্শ।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('জমি রেজিস্ট্রেশন')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-scroll"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="2. Deed Related Assistance">২. দলিল সংক্রান্ত সহায়তা</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Verification of old past-deeds, collecting certified copies, and help in correcting mistakes in deeds.">পুরানো পিঠ-দলিল যাচাই, সার্টিফাইড কপি (Certified Copy) তোলা ও দলিলের ভুল সংশোধনে সাহায্য।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('দলিল সংক্রান্ত সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="3. Land Record (Khatian & Dag)">৩. ভূমি রেকর্ড (খতিয়ান ও দাগ)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Providing accurate online information about LR and RS Khatian, Dag information, and Mouza maps.">LR ও RS খতিয়ান, দাগের তথ্য ও মৌজা ম্যাপ সংক্রান্ত যেকোনো অনলাইনের সঠিক তথ্য বের করে দেওয়া।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('ভূমি রেকর্ড (খতিয়ান, দাগ, মৌজা)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-file-pen"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="4. Mutation (Namjari)">৪. মিউটেশন (নামজারি)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Online mutation application, hearing preparation, and work related to ensuring names in official records.">অনলাইনে মিউটেশন আবেদন, শুনানির প্রস্তুতি এবং সরকারি রেকর্ডপত্রে নাম নিশ্চিত করার কাজ।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('মিউটেশন (নামজারি)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-shield-check"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="5. Property Verification">৫. সম্পত্তি যাচাই (Verification)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Checking and verifying whether the land is free from legal complications or trouble before purchasing.">জমি কেনার আগে আইনি জটিলতা বা ঝুটঝামেলা মুক্ত কি না তা সঠিকভাবে যাচাই-বাছাই করা।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('সম্পত্তি যাচাই')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="6. Land Buying and Selling Assistance">৬. জমি কেনাবেচা সহায়তা</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Connecting with the actual owner, fair price determination, and intermediation for safe land buying and selling.">প্রকৃত মালিকের সঙ্গে যোগাযোগ, ন্যায্য মূল্য নির্ধারণ ও নিরাপদে জমি কেনাবেচার মধ্যস্থতা।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('জমি কেনাবেচা সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="7. Amin Assistance (Measurement)">৭. আমিন সহায়তা (মাপজোক)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Accurate land measurement by experienced and authorized Amin, boundary determination, and boundary dispute resolution.">অভিজ্ঞ ও অনুমোদিত আমিন দ্বারা জমির সঠিক পরিমাপ, সীমানা নির্ধারণ ও সীমানা বিতর্ক সমাধান।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('আমিন সহায়তা (জমি মাপজোক)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                <i class="fa-solid fa-gavel"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="8. Lawyer Assistance">৮. উকিল সহায়তা</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Land title search by experienced lawyer and solution to any legal complications.">অভিজ্ঞ আইনজীবী দ্বারা জমির টাইটেল সার্চ (Title Search) ও যেকোনো আইনি জটিলতার সমাধান।</p>
+                        </div>
+                        <button onclick="selectServiceInForm('উকিল সহায়তা (আইনগত পরামর্শ)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <span data-en="Get Advice">পরামর্শ নিন</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white border-t border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Our Story">আমাদের কথা</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                            <span data-en='"Gazaria Land Services" —'>"'গজারিয়া ভূমি সেবা' —</span> <span data-en="Your dedicated and reliable companion in complex land work">জমির জটিল কাজে আপনার নিবেদিত ও নির্ভরযোগ্য সঙ্গী"</span>
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed text-base sm:text-lg" data-en="We know how time-consuming and difficult it is for ordinary people to do any government work related to land or correct records. People are often confused by incorrect information.">
+                            আমরা জানি সাধারণ মানুষের জন্য জমি সংক্রান্ত যেকোনো সরকারি কাজ বা রেকর্ড সংশোধন করা কতটা সময়সাপেক্ষ এবং কঠিন। ভুল তথ্যের কারণে মানুষ প্রায়শই বিভ্রান্ত হয়।
+                        </p>
+                        <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                            <strong data-en="Gazaria Land Services">গজারিয়া ভূমি সেবা</strong> <span data-en="was built to solve this problem. We provide proper guidance for all work starting from land buying and selling, mutation, Amin measuring to legal advice. Our only goal is that your work is done quickly, transparently, and without trouble.">গড়ে উঠেছে এই সমস্যা নিরসনের লক্ষ্য নিয়ে। আমরা জমি কেনাবেচা, মিউটেশন, আমিন মেপে দেওয়া থেকে শুরু করে আইনি পরামর্শ পর্যন্ত সকল কাজের জন্য সঠিক দিকনির্দেশনা প্রদান করি। আমাদের একমাত্র লক্ষ্য — আপনার কাজ যেন দ্রুত, স্বচ্ছ এবং ঝামেলাহীনভাবে সম্পন্ন হয়।</span>
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-emerald flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-user-shield text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900" data-en="Reliable Advice">বিশ্বস্ত পরামর্শ</h4>
+                                    <p class="text-xs text-gray-500 mt-1" data-en="Always prioritize honesty and accurate information">সবসময় সততা ও সঠিক তথ্যের প্রাধান্য</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-emerald flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900" data-en="Time Saving">সময় সাশ্রয়</h4>
+                                    <p class="text-xs text-gray-500 mt-1" data-en="Proper guidelines for government processes">সরকারি প্রক্রিয়ার সঠিক গাইডলাইন</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual Decorative Stack -->
+                    <div class="lg:col-span-6">
+                        <div class="relative">
+                            <div class="w-full h-96 sm:h-[450px] bg-gradient-to-br from-brand-deep to-emerald-800 rounded-3xl p-8 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
+                                <i class="fa-solid fa-building-columns text-9xl text-white/5 absolute -bottom-8 -right-8"></i>
+                                <div>
+                                    <div class="w-16 h-16 rounded-2xl bg-brand-gold flex items-center justify-center text-gray-900 text-3xl font-bold mb-6">
+                                        <i class="fa-solid fa-hand-holding-hand"></i>
+                                    </div>
+                                    <h3 class="text-2xl sm:text-3xl font-bold leading-snug" data-en="We are with you at every step to protect your property">আপনার সম্পত্তির সুরক্ষায় আমরা আছি প্রতিটি ধাপে</h3>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 mt-6">
+                                    <p class="text-sm text-gray-200" data-en='"Land work is not difficult if you know. Gazaria Land Services always leads you in the right direction."'>"জমির কাজ কঠিন নয়, যদি সঠিক নির্দেশনা জানা থাকে। গজারিয়া ভূমি সেবা সর্বদা সঠিক পথে আপনার পথপ্রদর্শক।"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Why We Are Unique">কেন আমরা অনন্য</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="Why choose 'Gazaria Land Services'?">কেন 'গজারিয়া ভূমি সেবা' নির্বাচন করবেন?</h2>
+                    <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
+                        <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-en="Simple Process">সহজ প্রক্রিয়া</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-en="Full topics and rules are explained in simple Bangla without any complex language twists.">কোনো জটিল ভাষার মারপ্যাঁচ ছাড়া সহজ বাংলায় সম্পূর্ণ বিষয় ও নিয়মাবলী বুঝিয়ে দেওয়া হয়।</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
+                        <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-en="Transparent Information">স্বচ্ছ তথ্য</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-en="No hidden costs or confusing promises. Transparency is our main strength.">কোনো প্রকার লুকানো খরচ বা বিভ্রান্তিকর প্রতিশ্রুতি নেই। স্বচ্ছতাই আমাদের মূল শক্তি।</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
+                        <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-comments text-brand-emerald"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-en="Fast Communication">দ্রুত যোগাযোগ</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-en="Quick answers to your questions at any time via phone or WhatsApp.">ফোন বা হোয়াটসঅ্যাপের মাধ্যমে যেকোনো সময় আপনার প্রশ্নের দ্রুত উত্তর প্রদান।</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
+                        <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-people-carry-box"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900" data-en="Responsible Assistance">দায়িত্বশীল সহায়তা</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed" data-en="Guarantee of completion of work under the supervision of experienced experts from start to finish.">শুরু থেকে শেষ পর্যন্ত অভিজ্ঞ বিশেষজ্ঞদের তত্ত্বাবধানে কাজ সম্পন্ন করার গ্যারান্টি।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Workflow">কার্যপদ্ধতি</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="How does Gazaria Land Services work?">কীভাবে কাজ করে গজারিয়া ভূমি সেবা?</h2>
+                    <p class="text-gray-600 mt-2" data-en="Get solutions in just 4 simple steps">মাত্র ৪টি সহজ ধাপে সমাধান পান</p>
+                    <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
+                        <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
+                            ১
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900" data-en="Submit Inquiry">অনুসন্ধান জমা দিন</h3>
+                        <p class="text-xs text-gray-600" data-en="Send your name and land details or problem online on our website.">আমাদের ওয়েবসাইটে অনলাইনে আপনার নাম ও জমির বিস্তারিত বা সমস্যা লিখে পাঠান।</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
+                        <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
+                            ২
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900" data-en="Information Review">তথ্য পর্যালোচনা</h3>
+                        <p class="text-xs text-gray-600" data-en="Our experienced team will thoroughly examine your provided Khatian, Dag, and documents.">আমাদের অভিজ্ঞ টিম আপনার প্রদত্ত খতিয়ান, দাগ ও নথিপত্র পুঙ্খানুপুঙ্খ পরীক্ষা করবে।</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
+                        <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
+                            ৩
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900" data-en="Advice & Planning">পরামর্শ ও পরিকল্পনা</h3>
+                        <p class="text-xs text-gray-600" data-en="We will show you the appropriate solution path by talking directly to you on the phone or WhatsApp.">আমরা সরাসরি আপনার সাথে ফোনে বা হোয়াটসঅ্যাপে কথা বলে উপযুক্ত সমাধানের পথ দেখাব।</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
+                        <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
+                            ৪
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-900" data-en="Work Completion">কাজ সম্পন্ন</h3>
+                        <p class="text-xs text-gray-600" data-en="All steps will be completed correctly while maintaining legal accuracy.">আইনি সঠিকতা বজায় রেখে সমস্ত ধাপ সঠিকভাবে সম্পন্ন করা হবে।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Showcase / Visual Cards Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                    <div>
+                        <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase" data-en="Gallery & Samples">গ্যালারি ও নমুনা</span>
+                        <h2 class="text-3xl font-extrabold text-gray-900 mt-1" data-en="Our Service Gallery">আমাদের সেবা গ্যালারি</h2>
+                    </div>
+                    <p class="text-gray-500 text-sm mt-2 md:mt-0" data-en="Ideal example of every land-related work">জমি জমা সংক্রান্ত প্রতিটি কাজের আদর্শ উদাহরণ</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                        <div class="h-48 bg-emerald-800 p-6 text-white flex flex-col justify-end relative">
+                            <i class="fa-solid fa-file-contract text-6xl text-white/10 absolute top-4 right-4"></i>
+                            <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Registration">রেজিস্ট্রেশন</span>
+                            <h4 class="text-xl font-bold" data-en="Deeds and Registry">দলিল ও রেজিস্ট্রি</h4>
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-600" data-en="Reliable advice is given on proper deed sample preparation and sales-related draft document creation.">সঠিক দলিলের নমুনা প্রস্তুতি, বিক্রয় সংক্রান্ত খসড়া পত্র তৈরিতে নির্ভরযোগ্য পরামর্শ প্রদান করা হয়।</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                        <div class="h-48 bg-teal-800 p-6 text-white flex flex-col justify-end relative">
+                            <i class="fa-solid fa-compass-drafting text-6xl text-white/10 absolute top-4 right-4"></i>
+                            <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Amin Scale">আমিন স্কেল</span>
+                            <h4 class="text-xl font-bold" data-en="Land Survey and Map">জমি জরিপ ও ম্যাপ</h4>
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-600" data-en="Measurement by experienced Amin and accurate boundary creation based on Mouza Map.">মৌজা ম্যাপের ভিত্তিতে অভিজ্ঞ আমিন দ্বারা পরিমাপ এবং নিখুঁত সীমারেখা তৈরি।</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                        <div class="h-48 bg-emerald-900 p-6 text-white flex flex-col justify-end relative">
+                            <i class="fa-solid fa-building-circle-check text-6xl text-white/10 absolute top-4 right-4"></i>
+                            <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Mutation">মিউটেশন</span>
+                            <h4 class="text-xl font-bold" data-en="Online Ledger Mutation">অনলাইন খতিয়ান নামজারি</h4>
+                        </div>
+                        <div class="p-5">
+                            <p class="text-xs text-gray-600" data-en="Accurate process of correctly getting your name in Dag and Khatian in official records.">সরকারি রেকর্ডে দাগ ও খতিয়ানে নিজের নাম সঠিকভাবে তোলার নিশ্চিত প্রক্রিয়া।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic WhatsApp Lead Inquiry Form Section -->
+        <section id="inquiry" class="py-20 bg-white border-t border-gray-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gray-50 rounded-3xl p-6 sm:p-10 border border-gray-200 shadow-lg">
+                    <div class="text-center mb-8">
+                        <span class="text-brand-emerald font-bold text-xs uppercase tracking-wider bg-emerald-100 px-3 py-1 rounded-full" data-en="Online Inquiry Form">অনলাইন অনুসন্ধান ফর্ম</span>
+                        <h2 class="text-3xl font-extrabold text-gray-900 mt-2" data-en="Send Land Details Information">জমির বিস্তারিত তথ্য লিখে পাঠান</h2>
+                        <p class="text-sm text-gray-600 mt-1" data-en="If you fill out the form, the detailed information you create will automatically go to our WhatsApp">ফর্মটি পূরণ করলে আপনার তৈরি করা বিস্তারিত তথ্য স্বয়ংক্রিয়ভাবে আমাদের হোয়াটসঅ্যাপে চলে যাবে</p>
+                    </div>
+
+                    <form id="fullInquiryForm" onsubmit="handleFullInquiry(event)" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Name -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Your Name *">আপনার নাম <span class="text-red-500">*</span></label>
+                                <input type="text" id="inqName" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সম্পূর্ণ নাম লিখুন" data-en-placeholder="e.g. Sajjad Hossain">
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Mobile Number *">মোবাইল নম্বর <span class="text-red-500">*</span></label>
+                                <input type="tel" id="inqPhone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
+                            </div>
+
+                            <!-- Service Select -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Select Service *">পরিষেবা নির্বাচন করুন <span class="text-red-500">*</span></label>
+                                <select id="inqService" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white">
+                                    <option value="" data-en="-- Select Service --">-- পরিষেবা বাছাই করুন --</option>
+                                    <option value="জমি রেজিস্ট্রেশন" data-en="Land Registration">জমি রেজিস্ট্রেশন</option>
+                                    <option value="দলিল সংক্রান্ত সহায়তা" data-en="Deed Related Assistance">দলিল সংক্রান্ত সহায়তা</option>
+                                    <option value="ভূমি রেকর্ড (খতিয়ান, দাগ, মৌজা)" data-en="Land Record (Khatian, Dag, Mouza)">ভূমি রেকর্ড (খতিয়ান, দাগ, মৌজা)</option>
+                                    <option value="মিউটেশন (নামজারি)" data-en="Mutation (Namjari)">মিউটেশন (নামজারি)</option>
+                                    <option value="সম্পত্তি যাচাই" data-en="Property Verification">সম্পত্তি যাচাই</option>
+                                    <option value="জমি কেনাবেচা সহায়তা" data-en="Land Buying and Selling Assistance">জমি কেনাবেচা সহায়তা</option>
+                                    <option value="আমিন সহায়তা (জমি মাপজোক)" data-en="Amin Assistance (Land Measurement)">আমিন সহায়তা (জমি মাপজোক)</option>
+                                    <option value="উকিল সহায়তা (আইনগত পরামর্শ)" data-en="Lawyer Assistance (Legal Advice)">উকিল সহায়তা (আইনগত পরামর্শ)</option>
+                                </select>
+                            </div>
+
+                            <!-- District -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="District">জেলা (District)</label>
+                                <input type="text" id="inqDistrict" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: মুন্সীগঞ্জ, ইত্যাদি" data-en-placeholder="e.g. Munshiganj">
+                            </div>
+
+                            <!-- Thana -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Thana / Block">থানা / ব্লক (Thana/Block)</label>
+                                <input type="text" id="inqThana" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: গজারিয়া" data-en-placeholder="e.g. Gazaria">
+                            </div>
+
+                            <!-- Mouza -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Mouza & JL No">মৌজা ও জে.এল নম্বর (Mouza & JL No)</label>
+                                <input type="text" id="inqMouza" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: রায়পুর (JL 45)" data-en-placeholder="e.g. Raipur (JL 45)">
+                            </div>
+
+                            <!-- LR Dag -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="LR Dag No">LR দাগ নম্বর (Dag No)</label>
+                                <input type="text" id="inqDag" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: ১২৩৪" data-en-placeholder="e.g. 1234">
+                            </div>
+
+                            <!-- Khatian -->
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Khatian No">খতিয়ান নম্বর (Khatian No)</label>
+                                <input type="text" id="inqKhatian" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: ৫৬৭" data-en-placeholder="e.g. 567">
+                            </div>
+                        </div>
+
+                        <!-- Details Message -->
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Detailed Description or Problem">বিস্তারিত বিবরণ বা সমস্যা</label>
+                            <textarea id="inqDetails" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সমস্যা বা প্রয়োজনীয়তা সংক্ষেপে লিখুন..." data-en-placeholder="Write details of your problem or needs here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-brand-emerald hover:bg-emerald-700 text-white font-bold text-base transition-all duration-300 shadow-md flex justify-center items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span data-en="Submit Details via WhatsApp">হোয়াটসঅ্যাপের মাধ্যমে বিবরণ জমা দিন</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Contact Us">যোগাযোগ করুন</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="Connect Directly With Us">আমাদের সাথে সরাসরি যুক্ত হন</h2>
+                    <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                    <!-- Phone Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2" data-en="Call Us">ফোন করুন</h4>
+                        <p class="text-sm text-gray-500 mb-4" data-en="Talk directly on the phone call to get advice">পরামর্শ পেতে সরাসরি ফোন কলেই কথা বলুন</p>
+                        <a href="tel:+8801683350549" class="text-lg font-bold text-brand-emerald hover:underline">+8801683350549</a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2" data-en="Send Email">ইমেইল পাঠান</h4>
+                        <p class="text-sm text-gray-500 mb-4" data-en="To send official information or documents">অফিসিয়াল তথ্য বা নথিপত্র পাঠাতে</p>
+                        <a href="mailto:lsfcgazaria@gmail.com" class="text-sm font-bold text-brand-emerald hover:underline break-all">lsfcgazaria@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Combined Single Card Container for Both Offices (Desktop: Side by Side, Mobile: Stacked) -->
+                <div class="bg-white p-8 sm:p-10 rounded-2xl border border-gray-100 shadow-sm mt-8 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-8" data-en="Office Addresses">অফিসের ঠিকানা</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                        <!-- Office 1 -->
+                        <div class="pt-6 md:pt-0 flex flex-col items-center text-center">
+                            <h5 class="text-xl font-bold text-brand-emerald mb-2" data-en="Office 1">অফিস ১</h5>
+                            <p class="text-sm text-gray-700 font-medium mb-3" data-en="Sonali Market, Gazaria">সোনালী মার্কেট, গজারিয়া</p>
+                            <span class="text-xs font-semibold bg-emerald-50 text-brand-emerald px-3 py-1.5 rounded-full border border-emerald-100" data-en="9 AM - 5 PM">সকাল ৯ - বিকাল ৫ টা</span>
+                        </div>
+
+                        <!-- Office 2 -->
+                        <div class="pt-8 md:pt-0 flex flex-col items-center text-center">
+                            <h5 class="text-xl font-bold text-brand-emerald mb-2" data-en="Office 2">অফিস ২</h5>
+                            <p class="text-sm text-gray-700 font-medium mb-3" data-en="Bhaterchar Bazar, Madhya Bhaterchar, Gazaria">ভাটেরচর বাজার, মধ্যে ভাটেরচর, গজারিয়া</p>
+                            <span class="text-xs font-semibold bg-emerald-50 text-brand-emerald px-3 py-1.5 rounded-full border border-emerald-100" data-en="9 AM - 8 PM">সকাল ৯ - রাত ৮ টা</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-deep text-white border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Info -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-[52px] h-[52px] shrink-0 rounded-lg bg-white text-gray-900 flex items-center justify-center font-bold overflow-hidden">
+                            <img src="Gazaria Land service Logo.svg" alt="Gazaria Land Services Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-2xl font-bold text-white" data-en="Gazaria Land Services">গজারিয়া ভূমি সেবা</span>
+                    </div>
+                    <p class="text-sm text-gray-300 leading-relaxed" data-en="Trusted support center for all tasks related to land and property in any upazila of Gazaria.">
+                        গজারিয়ার যেকোনো উপজেলার জমি ও সম্পত্তি সংক্রান্ত যাবতীয় কাজের বিশ্বস্ত সহায়ক কেন্দ্র। 
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Quick Links">দ্রুত লিঙ্ক</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="/" onclick="navigateTo(event, 'home')" class="hover:text-brand-gold transition" data-en="Home">হোম</a></li>
+                        <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Services">পরিষেবাসমূহ</a></li>
+                        <li><a href="/about" onclick="navigateTo(event, 'about')" class="hover:text-brand-gold transition" data-en="About Us">আমাদের সম্পর্কে</a></li>
+                        <li><a href="/why-us" onclick="navigateTo(event, 'why-us')" class="hover:text-brand-gold transition" data-en="Why Us">কেন আমরা</a></li>
+                        <li><a href="/inquiry" onclick="navigateTo(event, 'inquiry')" class="hover:text-brand-gold transition" data-en="Inquiry Form">অনুসন্ধান ফর্ম</a></li>
+                    </ul>
+                </div>
+
+                <!-- Main Services -->
+                <div>
+                    <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Main Services">প্রধান সেবা</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Land Mutation">জমির মিউটেশন</a></li>
+                        <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Khatian & Dag Information">খতিয়ান ও দাগ তথ্য</a></li>
+                        <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Amin Measurement">আমিন মাপজোক</a></li>
+                        <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Legal Advice">আইনি পরামর্শ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Urgent Contact">
+                        জরুরি যোগাযোগ
+                    </h4>
+
+                    <!-- Clickable Phone Number -->
+                    <p class="text-sm text-gray-300 mb-2">
+                        <i class="fa-solid fa-phone text-brand-gold mr-2"></i>
+                        <a href="tel:+8801683350549" class="hover:text-brand-gold transition-colors duration-300">
+                            +8801683350549
+                        </a>
+                    </p>
+
+                    <!-- Clickable Email Address -->
+                    <p class="text-sm text-gray-300 mb-4 break-all">
+                        <i class="fa-solid fa-envelope text-brand-gold mr-2"></i>
+                        <a href="mailto:lsfcgazaria@gmail.com" class="hover:text-brand-gold transition-colors duration-300">
+                            lsfcgazaria@gmail.com
+                        </a>
+                    </p>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/8801302601212" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-en="WhatsApp Chat">হোয়াটসঅ্যাপ চ্যাট</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p data-en="© 2026 Gazaria Land Services. All Rights Reserved.">© 2026 গজারিয়া ভূমি সেবা. সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fast Inquiry Trigger Modal -->
+    <div id="inquiryModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-fade-in">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center font-bold">
+                ✕
+            </button>
+            
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-emerald-100 text-brand-emerald rounded-full flex items-center justify-center text-xl mx-auto mb-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900" data-en="Quick Inquiry">দ্রুত অনুসন্ধান করুন</h3>
+                <p class="text-xs text-gray-500 mt-1" data-en="Tell us your needs below">আপনার প্রয়োজনীয়তা নিচে জানান</p>
+            </div>
+
+            <form onsubmit="submitModalForm(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1" data-en="Name *">নাম *</label>
+                    <input type="text" id="modalName" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="আপনার নাম" data-en-placeholder="Your Name">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1" data-en="Phone Number *">ফোন নম্বর *</label>
+                    <input type="tel" id="modalPhone" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="ফোন নম্বর" data-en-placeholder="Phone Number">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1" data-en="What assistance is needed?">কী সহায়তা প্রয়োজন?</label>
+                    <textarea id="modalMsg" rows="3" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="সংক্ষেপে বলুন..." data-en-placeholder="Briefly describe..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-brand-emerald hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span data-en="Send Solution on WhatsApp">হোয়াটসঅ্যাপে সমাধান পাঠান</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Smooth scroll and Clean URL routing without hash (#)
+        function navigateTo(event, targetId) {
+            event.preventDefault();
+            const element = document.getElementById(targetId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                const newPath = targetId === 'home' ? '/' : '/' + targetId;
+                window.history.pushState({ target: targetId }, '', newPath);
+            } else {
+                const newPath = targetId === 'home' ? '/' : '/' + targetId;
+                window.location.href = newPath;
+            }
+        }
+
+        // Handle browser back/forward buttons and page reload based on pathname
+        window.addEventListener('popstate', (event) => {
+            let path = window.location.pathname.replace('/', '').trim();
+            if (path === '') path = 'home';
+            const element = document.getElementById(path);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // On page load, check if URL has a path and scroll to it smoothly
+        document.addEventListener('DOMContentLoaded', () => {
+            let path = window.location.pathname.replace('/', '').trim();
+            if (path === '') path = 'home';
+            const element = document.getElementById(path);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }, 200);
+            }
+        });
+
+        // Mobile Navigation Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+        // Modal Handlers
+        function openModal() {
+            document.getElementById('inquiryModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('inquiryModal').classList.add('hidden');
+        }
+
+        // Auto Select Service into Main Inquiry Form & Scroll
+        function selectServiceInForm(serviceName) {
+            const selectEl = document.getElementById('inqService');
+            if (selectEl) {
+                selectEl.value = serviceName;
+            }
+            const inquirySection = document.getElementById('inquiry');
+            if (inquirySection) {
+                inquirySection.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState({ target: 'inquiry' }, '', '/inquiry');
+            }
+        }
+
+        // Hero Quick Form Submission
+        function submitQuickHeroForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('heroName').value.trim();
+            const phone = document.getElementById('heroPhone').value.trim();
+            const service = document.getElementById('heroService').value;
+
+            const textMessage = `আসসালামু আলাইকুম! আমি গজারিয়া ভূমি সেবা ওয়েবসাইট থেকে অনুসন্ধান করছি:\n\n👤 *নাম:* ${name}\n📞 *মোবাইল:* ${phone}\n📌 *পরিষেবা:* ${service}`;
+            const whatsappUrl = `https://wa.me/+8801302601212?text=${encodeURIComponent(textMessage)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Full Detailed Inquiry Form Submission
+        function handleFullInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('inqName').value.trim();
+            const phone = document.getElementById('inqPhone').value.trim();
+            const service = document.getElementById('inqService').value;
+            const district = document.getElementById('inqDistrict').value.trim() || 'উল্লেখ করা হয়নি';
+            const thana = document.getElementById('inqThana').value.trim() || 'উল্লেখ করা হয়নি';
+            const mouza = document.getElementById('inqMouza').value.trim() || 'উল্লেখ করা হয়নি';
+            const dag = document.getElementById('inqDag').value.trim() || 'উল্লেখ করা হয়নি';
+            const khatian = document.getElementById('inqKhatian').value.trim() || 'উল্লেখ করা হয়নি';
+            const details = document.getElementById('inqDetails').value.trim() || 'কোনো বিবরণ দেওয়া হয়নি';
+
+            const message = `*গজারিয়া ভূমি সেবা — নতুন অনুসন্ধান পত্র*\n\n` +
+                `👤 *নাম:* ${name}\n` +
+                `📞 *ফোন:* ${phone}\n` +
+                `🛠️ *পরিষেবা:* ${service}\n` +
+                `📍 *জেলা:* ${district}\n` +
+                `🏛️ *থানা/ব্লক:* ${thana}\n` +
+                `🗺️ *মৌজা:* ${mouza}\n` +
+                `🔢 *LR দাগ নম্বর:* ${dag}\n` +
+                `📜 *খতিয়ান নম্বর:* ${khatian}\n` +
+                `💬 *বিবরণ:* ${details}`;
+
+            const whatsappUrl = `https://wa.me/+8801302601212?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Fast Modal Form Submission
+        function submitModalForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('modalName').value.trim();
+            const phone = document.getElementById('modalPhone').value.trim();
+            const msg = document.getElementById('modalMsg').value.trim() || 'সাধারণ অনুসন্ধান';
+
+            const message = `আসসালামু আলাইকুম! দ্রুত অনুসন্ধান:\n👤 *নাম:* ${name}\n📞 *মোবাইল:* ${phone}\n📝 *বিষয়:* ${msg}`;
+            const whatsappUrl = `https://wa.me/+8801302601212?text=${encodeURIComponent(message)}`;
+
+            closeModal();
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Language Switching Logic (Default is Bengali)
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            const placeholders = document.querySelectorAll('[data-en-placeholder]');
+            
+            const btnBn = document.getElementById('langBn');
+            const btnEn = document.getElementById('langEn');
+            const btnBnMobile = document.getElementById('langBnMobile');
+            const btnEnMobile = document.getElementById('langEnMobile');
+
+            const siteTitle = document.getElementById('site-title');
+            const metaDesc = document.querySelector('meta[name="description"]');
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDesc = document.querySelector('meta[property="og:description"]');
+
+            if (lang === 'en') {
+                btnBn.classList.remove('bg-brand-emerald', 'text-white', 'shadow-sm');
+                btnBn.classList.add('text-gray-600', 'hover:text-brand-emerald');
+                btnEn.classList.add('bg-brand-emerald', 'text-white', 'shadow-sm');
+                btnEn.classList.remove('text-gray-600', 'hover:text-brand-emerald');
+                
+                if(btnBnMobile && btnEnMobile) {
+                    btnBnMobile.classList.remove('bg-brand-emerald', 'text-white', 'shadow-sm');
+                    btnBnMobile.classList.add('text-gray-600');
+                    btnEnMobile.classList.add('bg-brand-emerald', 'text-white', 'shadow-sm');
+                    btnEnMobile.classList.remove('text-gray-600');
+                }
+
+                // Title, Meta & OG update
+                if (siteTitle && siteTitle.hasAttribute('data-en')) {
+                    if (!siteTitle.hasAttribute('data-bn')) siteTitle.setAttribute('data-bn', siteTitle.innerText);
+                    siteTitle.innerText = siteTitle.getAttribute('data-en');
+                }
+                if (metaDesc && metaDesc.hasAttribute('data-en-desc')) {
+                    if (!metaDesc.hasAttribute('data-bn-desc')) metaDesc.setAttribute('data-bn-desc', metaDesc.getAttribute('content'));
+                    metaDesc.setAttribute('content', metaDesc.getAttribute('data-en-desc'));
+                }
+                if (ogTitle && ogTitle.hasAttribute('data-en-og')) {
+                    if (!ogTitle.hasAttribute('data-bn-og')) ogTitle.setAttribute('data-bn-og', ogTitle.getAttribute('content'));
+                    ogTitle.setAttribute('content', ogTitle.getAttribute('data-en-og'));
+                }
+                if (ogDesc && ogDesc.hasAttribute('data-en-og-desc')) {
+                    if (!ogDesc.hasAttribute('data-bn-og-desc')) ogDesc.setAttribute('data-bn-og-desc', ogDesc.getAttribute('content'));
+                    ogDesc.setAttribute('content', ogDesc.getAttribute('data-en-og-desc'));
+                }
+
+                elements.forEach(el => {
+                    const originalText = el.innerText;
+                    const englishText = el.getAttribute('data-en');
+                    
+                    if (!el.hasAttribute('data-bn')) {
+                        el.setAttribute('data-bn', originalText);
+                    }
+                    
+                    if (el.tagName.toLowerCase() !== 'input' && el.tagName.toLowerCase() !== 'textarea') {
+                        el.innerText = englishText;
+                    }
+                });
+
+                placeholders.forEach(el => {
+                    const originalPh = el.getAttribute('placeholder');
+                    const englishPh = el.getAttribute('data-en-placeholder');
+                    if (!el.hasAttribute('data-bn-placeholder')) {
+                        el.setAttribute('data-bn-placeholder', originalPh);
+                    }
+                    el.setAttribute('placeholder', englishPh);
+                });
+                
+                document.documentElement.lang = 'en';
+            } else {
+                btnEn.classList.remove('bg-brand-emerald', 'text-white', 'shadow-sm');
+                btnEn.classList.add('text-gray-600', 'hover:text-brand-emerald');
+                btnBn.classList.add('bg-brand-emerald', 'text-white', 'shadow-sm');
+                btnBn.classList.remove('text-gray-600', 'hover:text-brand-emerald');
+
+                if(btnBnMobile && btnEnMobile) {
+                    btnEnMobile.classList.remove('bg-brand-emerald', 'text-white', 'shadow-sm');
+                    btnEnMobile.classList.add('text-gray-600');
+                    btnBnMobile.classList.add('bg-brand-emerald', 'text-white', 'shadow-sm');
+                    btnBnMobile.classList.remove('text-gray-600');
+                }
+
+                // Title, Meta & OG reset
+                if (siteTitle && siteTitle.hasAttribute('data-bn')) {
+                    siteTitle.innerText = siteTitle.getAttribute('data-bn');
+                }
+                if (metaDesc && metaDesc.hasAttribute('data-bn-desc')) {
+                    metaDesc.setAttribute('content', metaDesc.getAttribute('data-bn-desc'));
+                }
+                if (ogTitle && ogTitle.hasAttribute('data-bn-og')) {
+                    ogTitle.setAttribute('content', ogTitle.getAttribute('data-bn-og'));
+                }
+                if (ogDesc && ogDesc.hasAttribute('data-bn-og-desc')) {
+                    ogDesc.setAttribute('content', ogDesc.getAttribute('data-bn-og-desc'));
+                }
+
+                elements.forEach(el => {
+                    if (el.hasAttribute('data-bn')) {
+                        const banglaText = el.getAttribute('data-bn');
+                        if (el.tagName.toLowerCase() !== 'input' && el.tagName.toLowerCase() !== 'textarea') {
+                            el.innerText = banglaText;
+                        }
+                    }
+                });
+
+                placeholders.forEach(el => {
+                    if (el.hasAttribute('data-bn-placeholder')) {
+                        el.setAttribute('placeholder', el.getAttribute('data-bn-placeholder'));
+                    }
+                });
+
+                document.documentElement.lang = 'bn';
+            }
+        }
+    </script>
+</body>
+</html>
