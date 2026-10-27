@@ -249,11 +249,11 @@
                                 <form onsubmit="submitQuickHeroForm(event)" class="space-y-4">
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Your Name *">আপনার নাম *</label>
-                                        <input type="text" id="heroName" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="উদা: সাজ্জাদ হোসাইন" data-en-placeholder="e.g. Sajjad Hossain">
+                                        <input type="text" id="heroName" required oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="উদা: সাজ্জাদ হোসাইন" data-en-placeholder="e.g. Sajjad Hossain">
                                     </div>
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Mobile Number *">মোবাইল নম্বর *</label>
-                                        <input type="tel" id="heroPhone" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
+                                        <input type="tel" id="heroPhone" required maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald focus:border-brand-emerald outline-none text-sm transition" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
                                     </div>
                                     <div>
                                         <label class="block text-xs font-semibold text-gray-700 mb-1" data-en="Required Service">প্রয়োজনীয় পরিষেবা</label>
@@ -627,13 +627,13 @@
                                 <!-- Name -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Your Name *">আপনার নাম <span class="text-red-500">*</span></label>
-                                    <input type="text" id="inqName" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সম্পূর্ণ নাম লিখুন" data-en-placeholder="e.g. Sajjad Hossain">
+                                    <input type="text" id="inqName" required oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সম্পূর্ণ নাম লিখুন" data-en-placeholder="e.g. Sajjad Hossain">
                                 </div>
 
                                 <!-- Phone -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Mobile Number *">মোবাইল নম্বর <span class="text-red-500">*</span></label>
-                                    <input type="tel" id="inqPhone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
+                                    <input type="tel" id="inqPhone" required maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
                                 </div>
 
                                 <!-- Service Select -->
@@ -655,13 +655,13 @@
                                 <!-- District -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="District">জেলা (District)</label>
-                                    <input type="text" id="inqDistrict" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: মুন্সীগঞ্জ, ইত্যাদি" data-en-placeholder="e.g. Munshiganj">
+                                    <input type="text" id="inqDistrict" oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: মুন্সীগঞ্জ, ইত্যাদি" data-en-placeholder="e.g. Munshiganj">
                                 </div>
 
                                 <!-- Thana -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Thana / Block">থানা / ব্লক (Thana/Block)</label>
-                                    <input type="text" id="inqThana" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: গজারিয়া" data-en-placeholder="e.g. Gazaria">
+                                    <input type="text" id="inqThana" oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: গজারিয়া" data-en-placeholder="e.g. Gazaria">
                                 </div>
 
                                 <!-- Mouza -->
@@ -714,7 +714,7 @@
                                 <i class="fa-solid fa-phone-volume"></i>
                             </div>
                             <h4 class="text-xl font-bold text-gray-900 mb-2" data-en="Call Us">ফোন করুন</h4>
-                            <p class="text-sm text-gray-500 mb-4" data-en="Talk directly on the phone call to get advice">পরামর্শ পেতে সরাসরি ফোন কলেই কথা বলুন</p>
+                            <p class="text-sm text-gray-500 mb-4" data-en="Talk directly on the phone call to get advice">পরামর্শ পেতে সরাসরি ফোন কেই কথা বলুন</p>
                             
                             <!-- Two Numbers Layout: Side by side on Desktop, Stacked on Mobile -->
                             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 w-full">
@@ -761,8 +761,8 @@
             </section>
         </div>
 
-<!-- Privacy Policy Section (Hidden by Default, opens at /privacy-policy URL) -->
-        <section id="privacy-policy" class="hidden py-12 sm:py-20 bg-white border-t border-gray-100">
+        <!-- Privacy Policy Section (Hidden by Default, opens at /privacy-policy URL) -->
+        <section id="privacy-policy" class="hidden py-20 bg-white border-t border-gray-100">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="bg-gray-50 rounded-3xl p-6 sm:p-12 border border-gray-200 shadow-sm space-y-6">
                     <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8" data-en="Privacy Policy">গোপনীয়তা নীতি</h2>
@@ -925,11 +925,11 @@
             <form onsubmit="submitModalForm(event)" class="space-y-4">
                 <div>
                     <label class="block text-xs font-bold text-gray-700 mb-1" data-en="Name *">নাম *</label>
-                    <input type="text" id="modalName" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="আপনার নাম" data-en-placeholder="Your Name">
+                    <input type="text" id="modalName" required oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="আপনার নাম" data-en-placeholder="Your Name">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-gray-700 mb-1" data-en="Phone Number *">ফোন নম্বর *</label>
-                    <input type="tel" id="modalPhone" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="ফোন নম্বর" data-en-placeholder="Phone Number">
+                    <input type="tel" id="modalPhone" required maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm" placeholder="ফোন নম্বর" data-en-placeholder="Phone Number">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-gray-700 mb-1" data-en="What assistance is needed?">কী সহায়তা প্রয়োজন?</label>
@@ -945,31 +945,36 @@
 
     <!-- JavaScript Logic -->
     <script>
-        
- // Smooth scroll and Clean URL routing without hash (#) including Privacy Policy
+        // Smooth scroll and Clean URL routing without hash (#) including Privacy Policy
         function navigateTo(event, targetId) {
             if (event) event.preventDefault();
             
-            if (targetId === 'privacy-policy') {
-                // সরাসরি প্রাইভেসি পলিসি পেজে রিডাইরেক্ট করা, এতে স্ক্রলের কোনো ঝামেলা থাকবে না
-                window.location.href = '/privacy-policy';
-                return;
-            }
-
             const mainSections = document.getElementById('main-sections');
             const privacyPolicy = document.getElementById('privacy-policy');
 
-            if (mainSections) mainSections.classList.remove('hidden');
-            if (privacyPolicy) privacyPolicy.classList.add('hidden');
-
-            const element = document.getElementById(targetId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-                const newPath = targetId === 'home' ? '/' : '/' + targetId;
-                window.history.pushState({ target: targetId }, '', newPath);
+            if (targetId === 'privacy-policy') {
+                if (mainSections) mainSections.classList.add('hidden');
+                if (privacyPolicy) privacyPolicy.classList.remove('hidden');
+                window.history.pushState({ target: 'privacy-policy' }, '', '/privacy-policy');
+                
+                // Force instant scroll to top
+                document.documentElement.style.scrollBehavior = 'auto';
+                window.scrollTo(0, 0);
+                document.documentElement.style.scrollBehavior = '';
+                
             } else {
-                const newPath = targetId === 'home' ? '/' : '/' + targetId;
-                window.location.href = newPath;
+                if (mainSections) mainSections.classList.remove('hidden');
+                if (privacyPolicy) privacyPolicy.classList.add('hidden');
+
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    const newPath = targetId === 'home' ? '/' : '/' + targetId;
+                    window.history.pushState({ target: targetId }, '', newPath);
+                } else {
+                    const newPath = targetId === 'home' ? '/' : '/' + targetId;
+                    window.location.href = newPath;
+                }
             }
         }
 
@@ -977,7 +982,7 @@
         window.addEventListener('popstate', (event) => {
             let path = window.location.pathname.replace('/', '').trim();
             if (path === 'privacy-policy') {
-                window.location.href = '/privacy-policy';
+                navigateTo(null, 'privacy-policy');
             } else {
                 if (path === '' || path === '#') path = 'home';
                 navigateTo(null, path);
@@ -988,11 +993,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             let path = window.location.pathname.replace('/', '').trim();
             if (path === 'privacy-policy') {
-                const mainSections = document.getElementById('main-sections');
-                const privacyPolicy = document.getElementById('privacy-policy');
-                if (mainSections) mainSections.classList.add('hidden');
-                if (privacyPolicy) privacyPolicy.classList.remove('hidden');
-                window.scrollTo(0, 0);
+                navigateTo(null, 'privacy-policy');
             } else {
                 if (path === '' || path === '#') path = 'home';
                 const element = document.getElementById(path);
@@ -1030,12 +1031,33 @@
             navigateTo(null, 'inquiry');
         }
 
+        // Validate 11-digit Bangladeshi mobile number starting with 01
+        function validatePhoneNumber(phone) {
+            const phoneRegex = /^01[0-9]{9}$/;
+            return phoneRegex.test(phone);
+        }
+
+        // Get dynamic alert message based on current selected language
+        function getPhoneAlertMessage() {
+            const currentLang = document.documentElement.lang;
+            if (currentLang === 'en') {
+                return "The mobile number must start with '01' and be exactly 11 digits long.";
+            } else {
+                return "মোবাইল নম্বরটি অবশ্যই '01' দিয়ে শুরু এবং ১১ ডিজিটের হতে হবে।";
+            }
+        }
+
         // Hero Quick Form Submission
         function submitQuickHeroForm(e) {
             e.preventDefault();
             const name = document.getElementById('heroName').value.trim();
             const phone = document.getElementById('heroPhone').value.trim();
             const service = document.getElementById('heroService').value;
+
+            if (!validatePhoneNumber(phone)) {
+                alert(getPhoneAlertMessage());
+                return;
+            }
 
             const textMessage = `আসসালামু আলাইকুম! আমি গজারিয়া ভূমি সেবা ওয়েবসাইট থেকে অনুসন্ধান করছি:\n\n👤 *নাম:* ${name}\n📞 *মোবাইল:* ${phone}\n📌 *পরিষেবা:* ${service}`;
             const whatsappUrl = `https://wa.me/+8801302601212?text=${encodeURIComponent(textMessage)}`;
@@ -1056,11 +1078,16 @@
             const khatian = document.getElementById('inqKhatian').value.trim() || 'উল্লেখ করা হয়নি';
             const details = document.getElementById('inqDetails').value.trim() || 'কোনো বিবরণ দেওয়া হয়নি';
 
+            if (!validatePhoneNumber(phone)) {
+                alert(getPhoneAlertMessage());
+                return;
+            }
+
             const message = `*গজারিয়া ভূমি সেবা — নতুন অনুসন্ধান পত্র*\n\n` +
                 `👤 *নাম:* ${name}\n` +
                 `📞 *ফোন:* ${phone}\n` +
                 `🛠️ *পরিষেবা:* ${service}\n` +
-                `📍 *জেলা:* ${district}\n` +
+                `📍 *জেলা:* জেলার নাম\n` +
                 `🏛️ *থানা/ব্লক:* ${thana}\n` +
                 `🗺️ *মৌজা:* ${mouza}\n` +
                 `🔢 *LR দাগ নম্বর:* ${dag}\n` +
@@ -1077,6 +1104,11 @@
             const name = document.getElementById('modalName').value.trim();
             const phone = document.getElementById('modalPhone').value.trim();
             const msg = document.getElementById('modalMsg').value.trim() || 'সাধারণ অনুসন্ধান';
+
+            if (!validatePhoneNumber(phone)) {
+                alert(getPhoneAlertMessage());
+                return;
+            }
 
             const message = `আসসালামু আলাইকুম! দ্রুত অনুসন্ধান:\n👤 *নাম:* ${name}\n📞 *মোবাইল:* ${phone}\n📝 *বিষয়:* ${msg}`;
             const whatsappUrl = `https://wa.me/+8801302601212?text=${encodeURIComponent(message)}`;
