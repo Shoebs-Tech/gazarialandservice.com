@@ -351,7 +351,7 @@
                         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
                                 <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-shield-check"></i>
+                                    <i class="fa-solid fa-shield-halved"></i>
                                 </div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="5. Property Verification">৫. সম্পত্তি যাচাই (Verification)</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Checking and verifying whether the land is free from legal complications or trouble before purchasing.">জমি কেনার আগে আইনি জটিলতা বা ঝুটঝামেলা মুক্ত কি না তা সঠিকভাবে যাচাই-বাছাই করা।</p>
@@ -835,25 +835,29 @@
 
     <!-- Footer -->
     <footer class="bg-brand-deep text-white border-t border-emerald-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand Info -->
-                <div class="space-y-4 md:col-span-1">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+            
+            <!-- Desktop Layout: 4 Columns (Same as original) -->
+            <!-- Mobile Layout: Quick Links on Left, Urgent Contact on Right. Main Services hidden on Mobile, fully visible on Desktop. -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4 items-start">
+                
+                <!-- Brand Info (Spans full width on mobile or structured cleanly) -->
+                <div class="col-span-2 md:col-span-1 space-y-3">
                     <div class="flex items-center gap-3">
-                        <div class="w-[52px] h-[52px] shrink-0 rounded-lg bg-white text-gray-900 flex items-center justify-center font-bold overflow-hidden">
+                        <div class="w-[45px] h-[45px] sm:w-[52px] sm:h-[52px] shrink-0 rounded-lg bg-white text-gray-900 flex items-center justify-center font-bold overflow-hidden">
                             <img src="Gazaria Land service Logo.svg" alt="Gazaria Land Service Logo" class="w-full h-full object-contain">
                         </div>
-                        <span class="text-2xl font-bold text-white" data-en="Gazaria Land Service">গজারিয়া ভূমি সেবা</span>
+                        <span class="text-xl sm:text-2xl font-bold text-white" data-en="Gazaria Land Service">গজারিয়া ভূমি সেবা</span>
                     </div>
-                    <p class="text-sm text-gray-300 leading-relaxed" data-en="Trusted support center for all tasks related to land and property in any upazila of Gazaria.">
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed" data-en="Trusted support center for all tasks related to land and property in any upazila of Gazaria.">
                         গজারিয়ার যেকোনো উপজেলার জমি ও সম্পত্তি সংক্রান্ত যাবতীয় কাজের বিশ্বস্ত সহায়ক কেন্দ্র। 
                     </p>
                 </div>
 
                 <!-- Quick Links -->
-                <div>
-                    <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Quick Links">দ্রুত লিঙ্ক</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="text-sm sm:text-base font-bold text-brand-gold mb-3 uppercase tracking-wider" data-en="Quick Links">দ্রুত লিঙ্ক</h4>
+                    <ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-300">
                         <li><a href="/" onclick="navigateTo(event, 'home')" class="hover:text-brand-gold transition" data-en="Home">হোম</a></li>
                         <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Services">পরিষেবাসমূহ</a></li>
                         <li><a href="/about" onclick="navigateTo(event, 'about')" class="hover:text-brand-gold transition" data-en="About Us">আমাদের সম্পর্কে</a></li>
@@ -862,8 +866,8 @@
                     </ul>
                 </div>
 
-                <!-- Main Services -->
-                <div>
+                <!-- Main Services: Hidden on mobile (md:block ensures it only shows on desktop like original) -->
+                <div class="hidden md:block md:col-span-1">
                     <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Main Services">প্রধান সেবা</h4>
                     <ul class="space-y-2 text-sm text-gray-300">
                         <li><a href="/services" onclick="navigateTo(event, 'services')" class="hover:text-brand-gold transition" data-en="Land Mutation">জমির মিউটেশন</a></li>
@@ -873,36 +877,44 @@
                     </ul>
                 </div>
 
-                <!-- Contact & Social -->
-                <div>
-                    <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Urgent Contact">
+                <!-- Urgent Contact & Social (Sits on the right side of Quick Links on mobile due to grid layout) -->
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="text-sm sm:text-base font-bold text-brand-gold mb-3 uppercase tracking-wider" data-en="Urgent Contact">
                         জরুরি যোগাযোগ
                     </h4>
 
-                    <!-- Clickable Phone Numbers in Footer -->
-                    <div class="space-y-1 mb-2 text-sm text-gray-300">
-                        <p><i class="fa-solid fa-phone text-brand-gold mr-2"></i><a href="tel:+8801302601212" class="hover:text-brand-gold transition">01302601212</a></p>
-                        <p><i class="fa-solid fa-phone text-brand-gold mr-2"></i><a href="tel:+8801303072749" class="hover:text-brand-gold transition">01303072749</a></p>
+                    <!-- Clickable English Phone Numbers -->
+                    <div class="space-y-1 mb-2 text-xs sm:text-sm text-gray-300">
+                        <p><i class="fa-solid fa-phone text-brand-gold mr-1.5"></i><a href="tel:+8801302601212" class="hover:text-brand-gold transition">01302601212</a></p>
+                        <p><i class="fa-solid fa-phone text-brand-gold mr-1.5"></i><a href="tel:+8801303072749" class="hover:text-brand-gold transition">01303072749</a></p>
                     </div>
 
                     <!-- Clickable Email Address -->
-                    <p class="text-sm text-gray-300 mb-4 break-all">
-                        <i class="fa-solid fa-envelope text-brand-gold mr-2"></i>
+                    <p class="text-xs sm:text-sm text-gray-300 mb-3 break-all">
+                        <i class="fa-solid fa-envelope text-brand-gold mr-1.5"></i>
                         <a href="mailto:lsfcgazaria@gmail.com" class="hover:text-brand-gold transition-colors duration-300">
                             lsfcgazaria@gmail.com
                         </a>
                     </p>
 
                     <!-- WhatsApp Button -->
-                    <a href="https://wa.me/8801302601212" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition">
+                    <a href="https://wa.me/8801302601212" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] sm:text-xs font-bold transition">
                         <i class="fa-brands fa-whatsapp"></i>
                         <span data-en="WhatsApp Chat">হোয়াটসঅ্যাপ চ্যাট</span>
                     </a>
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <!-- Copyright and Developer Credit (Vertical Centered Alignment) -->
+            <div class="pt-4 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-2">
                 <p data-en="© 2026 Gazaria Land Service. All Rights Reserved.">© 2026 গজারিয়া ভূমি সেবা. সর্বস্বত্ব সংরক্ষিত।</p>
+
+                <p class="flex items-center justify-center gap-1.5 text-white mt-0">
+                  <span class="inline-flex items-center">Developed by</span> 
+                  <a href="https://tech.shoebs.com" target="_blank" class="inline-flex items-center text-brand-gold hover:underline font-bold">
+                    <font size="3">Shoebs Technologies</font>
+                  </a>
+                </p>
             </div>
         </div>
     </footer>
