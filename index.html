@@ -95,7 +95,7 @@
             font-family: 'Hind Siliguri', sans-serif;
             background-color: #f8f9fa;
         }
-        /* ✅ bg ta arektu clear korar jonno overlay opacity komano hoyeche (0.45 theke 0.6) */
+        /* ✅ Hero background */
         .hero-pattern {
             background-color: #0d5c3a;
             background-image: 
@@ -105,7 +105,6 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        /* ✅ ফর্ম কার্ডের ব্যাকগ্রাউন্ড আগের মতোই সাদা রাখা হয়েছে */
         .glass-card {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
@@ -248,8 +247,7 @@
                             <div class="glass-card text-gray-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-white/40">
                                 <div class="text-center mb-6">
                                     <span class="text-brand-deep font-bold text-xs uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100" data-en="Instant Solution">তাৎক্ষণিক সমাধান</span>
-                                    <!-- ✅ হেডিং টেক্সট সাদা করা হয়েছে যেন ছবির ওপর ফুটে ওঠে -->
-                                    <h3 class="text-2xl font-bold text-white drop-shadow-md mt-2" data-en="Easy Information Submission Form">সহজ তথ্য জমা ফর্ম</h3>
+                                    <h3 class="text-2xl font-bold text-black drop-shadow-md mt-2" data-en="Easy Information Submission Form">সহজ তথ্য জমা ফর্ম</h3>
                                     <p class="text-sm text-gray-600" data-en="Send your questions to us, we will help on WhatsApp">আপনার প্রশ্ন আমাদের কাছে পাঠান, আমরা হোয়াটসঅ্যাপে সাহায্য করব</p>
                                 </div>
 
@@ -284,131 +282,147 @@
             </section>
 
             <!-- Services Section -->
-            <section id="services" class="py-20 bg-gray-50">
+            <section id="services" class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
                         <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Our Services">আমাদের সেবাসমূহ</span>
                         <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="8 Major Assistances of Gazaria Land Service">গজারিয়া ভূমি সেবার ৮টি প্রধান সহায়তা</h2>
                         <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
                         <p class="text-gray-600 mt-4 text-base sm:text-lg" data-en="We are always ready to provide easy, legal, and fast solutions to all complex land-related problems.">জমি সংক্রান্ত সমস্ত জটিল সমস্যার সহজ, আইনসম্মত ও দ্রুত সমাধান পেতে আমরা সর্বদা প্রস্তুত।</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         <!-- Card 1 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-file-signature"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="1. Land Registration">১. জমি রেজিস্ট্রেশন</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="1. Land Registration">১. জমি রেজিস্ট্রেশন</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Advice on purchasing-selling deed preparation, accurate stamp duty calculation, and deed submission at the registry office.">ক্রয়-বিক্রয় দলিল তৈরি, সঠিক স্ট্যাম্প ডিউটি হিসেব এবং দলিল রেজিস্ট্রি অফিসে জমা সংক্রান্ত পরামর্শ।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Advice on purchasing-selling deed preparation, accurate stamp duty calculation, and deed submission at the registry office.">ক্রয়-বিক্রয় দলিল তৈরি, সঠিক স্ট্যাম্প ডিউটি হিসেব এবং দলিল রেজিস্ট্রি অফিসে জমা সংক্রান্ত পরামর্শ।</p>
                             </div>
-                            <button onclick="selectServiceInForm('জমি রেজিস্ট্রেশন')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('জমি রেজিস্ট্রেশন')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-scroll"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-scroll"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="2. Deed Related Assistance">২. দলিল সংক্রান্ত সহায়তা</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="2. Deed Related Assistance">২. দলিল সংক্রান্ত সহায়তা</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Verification of old past-deeds, collecting certified copies, and help in correcting mistakes in deeds.">পুরানো পিঠ-দলিল যাচাই, সার্টিফাইড কপি (Certified Copy) তোলা ও দলিলের ভুল সংশোধনে সাহায্য।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Verification of old past-deeds, collecting certified copies, and help in correcting mistakes in deeds.">পুরানো পিঠ-দলিল যাচাই, সার্টিফাইড কপি (Certified Copy) তোলা ও দলিলের ভুল সংশোধনে সাহায্য।</p>
                             </div>
-                            <button onclick="selectServiceInForm('দলিল সংক্রান্ত সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('দলিল সংক্রান্ত সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-map-location-dot"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="3. Land Record (Khatian & Dag)">৩. ভূমি রেকর্ড (খতিয়ান ও দাগ)</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="3. Land Record (Khatian & Dag)">৩. ভূমি রেকর্ড (খতিয়ান ও দাগ)</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Providing accurate online information about LR and RS Khatian, Dag information, and Mouza maps.">LR ও RS খতিয়ান, দাগের তথ্য ও মৌজা ম্যাপ সংক্রান্ত যেকোনো অনলাইনের সঠিক তথ্য বের করে দেওয়া।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Providing accurate online information about LR and RS Khatian, Dag information, and Mouza maps.">LR ও RS খতিয়ান, দাগের তথ্য ও মৌজা ম্যাপ সংক্রান্ত যেকোনো অনলাইনের সঠিক তথ্য বের করে দেওয়া।</p>
                             </div>
-                            <button onclick="selectServiceInForm('ভূমি রেকর্ড (খতিয়ান, দাগ, মৌজা)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('ভূমি রেকর্ড (খতিয়ান, দাগ, মৌজা)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 4 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-file-pen"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-file-pen"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="4. Mutation (Namjari)">৪. মিউটেশন (নামজারি)</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="4. Mutation (Namjari)">৪. মিউটেশন (নামজারি)</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Online mutation application, hearing preparation, and work related to ensuring names in official records.">অনলাইনে মিউটেশন আবেদন, শুনানির প্রস্তুতি এবং সরকারি রেকর্ডপত্রে নাম নিশ্চিত করার কাজ।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Online mutation application, hearing preparation, and work related to ensuring names in official records.">অনলাইনে মিউটেশন আবেদন, শুনানির প্রস্তুতি এবং সরকারি রেকর্ডপত্রে নাম নিশ্চিত করার কাজ।</p>
                             </div>
-                            <button onclick="selectServiceInForm('মিউটেশন (নামজারি)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('মিউটেশন (নামজারি)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 5 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-shield-halved"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="5. Property Verification">৫. সম্পত্তি যাচাই (Verification)</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="5. Property Verification">৫. সম্পত্তি যাচাই (Verification)</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Checking and verifying whether the land is free from legal complications or trouble before purchasing.">জমি কেনার আগে আইনি জটিলতা বা ঝুটঝামেলা মুক্ত কি না তা সঠিকভাবে যাচাই-বাছাই করা।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Checking and verifying whether the land is free from legal complications or trouble before purchasing.">জমি কেনার আগে আইনি জটিলতা বা ঝুটঝামেলা মুক্ত কি না তা সঠিকভাবে যাচাই-বাছাই করা।</p>
                             </div>
-                            <button onclick="selectServiceInForm('সম্পত্তি যাচাই')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('সম্পত্তি যাচাই')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 6 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-handshake"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-handshake"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="6. Land Buying and Selling Assistance">৬. জমি কেনাবেচা সহায়তা</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="6. Land Buying and Selling Assistance">৬. জমি কেনাবেচা সহায়তা</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Connecting with the actual owner, fair price determination, and intermediation for safe land buying and selling.">প্রকৃত মালিকের সঙ্গে যোগাযোগ, ন্যায্য মূল্য নির্ধারণ ও নিরাপদে জমি কেনাবেচার মধ্যস্থতা।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Connecting with the actual owner, fair price determination, and intermediation for safe land buying and selling.">প্রকৃত মালিকের সঙ্গে যোগাযোগ, ন্যায্য মূল্য নির্ধারণ ও নিরাপদে জমি কেনাবেচার মধ্যস্থতা।</p>
                             </div>
-                            <button onclick="selectServiceInForm('জমি কেনাবেচা সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('জমি কেনাবেচা সহায়তা')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 7 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-ruler-combined"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-ruler-combined"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="7. Amin Assistance (Measurement)">৭. আমিন সহায়তা (মাপজোক)</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="7. Amin Assistance (Measurement)">৭. আমিন সহায়তা (মাপজোক)</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Accurate land measurement by experienced and authorized Amin, boundary determination, and boundary dispute resolution.">অভিজ্ঞ ও অনুমোদিত আমিন দ্বারা জমির সঠিক পরিমাপ, সীমানা নির্ধারণ ও সীমানা বিতর্ক সমাধান।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Accurate land measurement by experienced and authorized Amin, boundary determination, and boundary dispute resolution.">অভিজ্ঞ ও অনুমোদিত আমিন দ্বারা জমির সঠিক পরিমাপ, সীমানা নির্ধারণ ও সীমানা বিতর্ক সমাধান।</p>
                             </div>
-                            <button onclick="selectServiceInForm('আমিন সহায়তা (জমি মাপজোক)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('আমিন সহায়তা (জমি মাপজোক)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
                         </div>
 
                         <!-- Card 8 -->
-                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+                        <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                             <div>
-                                <div class="w-14 h-14 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
-                                    <i class="fa-solid fa-gavel"></i>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="w-10 h-10 shrink-0 rounded-lg bg-emerald-50 text-brand-emerald flex items-center justify-center text-lg group-hover:bg-brand-emerald group-hover:text-white transition-colors duration-300">
+                                        <i class="fa-solid fa-gavel"></i>
+                                    </div>
+                                    <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="8. Lawyer Assistance">৮. উকিল সহায়তা</h3>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-2" data-en="8. Lawyer Assistance">৮. উকিল সহায়তা</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed mb-4" data-en="Land title search by experienced lawyer and solution to any legal complications.">অভিজ্ঞ আইনজীবী দ্বারা জমির টাইটেল সার্চ (Title Search) ও যেকোনো আইনি জটিলতার সমাধান।</p>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3" data-en="Land title search by experienced lawyer and solution to any legal complications.">অভিজ্ঞ আইনজীবী দ্বারা জমির টাইটেল সার্চ (Title Search) ও যেকোনো আইনি জটিলতার সমাধান।</p>
                             </div>
-                            <button onclick="selectServiceInForm('উকিল সহায়তা (আইনগত পরামর্শ)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1">
+                            <button onclick="selectServiceInForm('উকিল সহায়তা (আইনগত পরামর্শ)')" class="inline-flex items-center text-sm font-semibold text-brand-emerald hover:text-brand-deep gap-1 mt-auto">
                                 <span data-en="Get Advice">পরামর্শ নিন</span>
                                 <i class="fa-solid fa-arrow-right text-xs"></i>
                             </button>
@@ -455,18 +469,19 @@
                             </div>
                         </div>
 
-                        <!-- Right Visual Decorative Stack -->
+                        <!-- About Right Visual Card -->
                         <div class="lg:col-span-6">
                             <div class="relative">
-                                <div class="w-full h-96 sm:h-[450px] bg-gradient-to-br from-brand-deep to-emerald-800 rounded-3xl p-8 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
-                                    <i class="fa-solid fa-building-columns text-9xl text-white/5 absolute -bottom-8 -right-8"></i>
-                                    <div>
-                                        <div class="w-16 h-16 rounded-2xl bg-brand-gold flex items-center justify-center text-gray-900 text-3xl font-bold mb-6">
+                                <div class="w-full bg-gradient-to-br from-brand-deep to-emerald-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
+                                    <div class="flex items-start sm:items-center gap-4 mb-5">
+                                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-brand-gold flex items-center justify-center text-gray-900 text-2xl font-bold shrink-0 shadow-sm">
                                             <i class="fa-solid fa-hand-holding-hand"></i>
                                         </div>
-                                        <h3 class="text-2xl sm:text-3xl font-bold leading-snug" data-en="We are with you at every step to protect your property">আপনার সম্পত্তির সুরক্ষায় আমরা আছি প্রতিটি ধাপে</h3>
+                                        <h3 class="text-xl sm:text-2xl font-bold leading-snug" data-en="We are with you at every step to protect your property">আপনার সম্পত্তির সুরক্ষায় আমরা আছি প্রতিটি ধাপে</h3>
                                     </div>
-                                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 mt-6">
+                                    <i class="fa-solid fa-building-columns text-7xl text-white/5 absolute top-2 right-2 pointer-events-none"></i>
+                                    
+                                    <div class="bg-white/10 backdrop-blur-md p-4 sm:p-5 rounded-xl border border-white/20 mt-2 relative z-10">
                                         <p class="text-sm text-gray-200" data-en='"Land work is not difficult if you know. Gazaria Land Service always leads you in the right direction."'>"জমির কাজ কঠিন নয়, যদি সঠিক নির্দেশনা জানা থাকে। গজারিয়া ভূমি সেবা সর্বদা সঠিক পথে আপনার পথপ্রদর্শক।"</p>
                                     </div>
                                 </div>
@@ -477,95 +492,112 @@
             </section>
 
             <!-- Why Choose Us Section -->
-            <section id="why-us" class="py-20 bg-gray-50">
+            <section id="why-us" class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
                         <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Why We Are Unique">কেন আমরা অনন্য</span>
                         <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="Why choose 'Gazaria Land Service'?">কেন 'গজারিয়া ভূমি সেবা' নির্বাচন করবেন?</h2>
                         <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
-                            <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
-                                <i class="fa-solid fa-bolt"></i>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col hover:border-brand-emerald transition duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 bg-emerald-50 text-brand-emerald rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="Simple Process">সহজ প্রক্রিয়া</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900" data-en="Simple Process">সহজ প্রক্রিয়া</h3>
                             <p class="text-sm text-gray-600 leading-relaxed" data-en="Full topics and rules are explained in simple Bangla without any complex language twists.">কোনো জটিল ভাষার মারপ্যাঁচ ছাড়া সহজ বাংলায় সম্পূর্ণ বিষয় ও নিয়মাবলী বুঝিয়ে দেওয়া হয়।</p>
                         </div>
 
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
-                            <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
-                                <i class="fa-solid fa-eye"></i>
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col hover:border-brand-emerald transition duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 bg-emerald-50 text-brand-emerald rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="Transparent Information">স্বচ্ছ তথ্য</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900" data-en="Transparent Information">স্বচ্ছ তথ্য</h3>
                             <p class="text-sm text-gray-600 leading-relaxed" data-en="No hidden costs or confusing promises. Transparency is our main strength.">কোনো প্রকার লুকানো খরচ বা বিভ্রান্তিকর প্রতিশ্রুতি নেই। স্বচ্ছতাই আমাদের মূল শক্তি।</p>
                         </div>
 
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
-                            <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
-                                <i class="fa-solid fa-comments text-brand-emerald"></i>
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col hover:border-brand-emerald transition duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 bg-emerald-50 text-brand-emerald rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="Fast Communication">দ্রুত যোগাযোগ</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900" data-en="Fast Communication">দ্রুত যোগাযোগ</h3>
                             <p class="text-sm text-gray-600 leading-relaxed" data-en="Quick answers to your questions at any time via phone or WhatsApp.">ফোন বা হোয়াটসঅ্যাপের মাধ্যমে যেকোনো সময় আপনার প্রশ্নের দ্রুত উত্তর প্রদান।</p>
                         </div>
 
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center space-y-4 hover:border-brand-emerald transition duration-300">
-                            <div class="w-16 h-16 bg-emerald-50 text-brand-emerald rounded-full flex items-center justify-center text-2xl mx-auto">
-                                <i class="fa-solid fa-people-carry-box"></i>
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col hover:border-brand-emerald transition duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 bg-emerald-50 text-brand-emerald rounded-lg flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-people-carry-box"></i>
+                                </div>
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight" data-en="Responsible Assistance">দায়িত্বশীল সহায়তা</h3>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900" data-en="Responsible Assistance">দায়িত্বশীল সহায়তা</h3>
                             <p class="text-sm text-gray-600 leading-relaxed" data-en="Guarantee of completion of work under the supervision of experienced experts from start to finish.">শুরু থেকে শেষ পর্যন্ত অভিজ্ঞ বিশেষজ্ঞদের তত্ত্বাবধানে কাজ সম্পন্ন করার গ্যারান্টি।</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- How It Works Section -->
-            <section id="how-it-works" class="py-20 bg-white">
+            <!-- ✅ ৪র্থ ছবি ফিক্স: How It Works Section -->
+            <section id="how-it-works" class="py-16 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
                         <span class="text-brand-emerald font-bold text-sm tracking-widest uppercase bg-emerald-100/60 px-4 py-1.5 rounded-full" data-en="Workflow">কার্যপদ্ধতি</span>
                         <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3" data-en="How does Gazaria Land Service work?">কীভাবে কাজ করে গজারিয়া ভূমি সেবা?</h2>
                         <p class="text-gray-600 mt-2" data-en="Get solutions in just 4 simple steps">মাত্র ৪টি সহজ ধাপে সমাধান পান</p>
                         <div class="w-20 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
                     </div>
 
-                    <div class="grid md:grid-cols-4 gap-8 relative">
+                    <!-- নম্বর ও টাইটেল পাশাপাশি, নিচে ডেসক্রিপশন এবং বাড়তি প্যাডিং বাদ -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 relative">
                         <!-- Step 1 -->
-                        <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
-                            <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
-                                ১
+                        <div class="relative bg-gray-50 p-5 rounded-xl border border-gray-100 flex flex-col">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 rounded-full bg-brand-deep text-brand-gold text-lg font-bold flex items-center justify-center shadow-sm">
+                                    ১
+                                </div>
+                                <h3 class="font-bold text-base sm:text-lg text-gray-900 leading-tight" data-en="Submit Inquiry">অনুসন্ধান জমা দিন</h3>
                             </div>
-                            <h3 class="font-bold text-lg text-gray-900" data-en="Submit Inquiry">অনুসন্ধান জমা দিন</h3>
-                            <p class="text-xs text-gray-600" data-en="Send your name and land details or problem online on our website.">আমাদের ওয়েবসাইটে অনলাইনে আপনার নাম ও জমির বিস্তারিত বা সমস্যা লিখে পাঠান।</p>
+                            <p class="text-sm text-gray-600 mt-1" data-en="Send your name and land details or problem online on our website.">আমাদের ওয়েবসাইটে অনলাইনে আপনার নাম ও জমির বিস্তারিত বা সমস্যা লিখে পাঠান।</p>
                         </div>
 
                         <!-- Step 2 -->
-                        <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
-                            <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
-                                ২
+                        <div class="relative bg-gray-50 p-5 rounded-xl border border-gray-100 flex flex-col">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 rounded-full bg-brand-deep text-brand-gold text-lg font-bold flex items-center justify-center shadow-sm">
+                                    ২
+                                </div>
+                                <h3 class="font-bold text-base sm:text-lg text-gray-900 leading-tight" data-en="Information Review">তথ্য পর্যালোচনা</h3>
                             </div>
-                            <h3 class="font-bold text-lg text-gray-900" data-en="Information Review">তথ্য পর্যালোচনা</h3>
-                            <p class="text-xs text-gray-600" data-en="Our experienced team will thoroughly examine your provided Khatian, Dag, and documents.">আমাদের অভিজ্ঞ টিম আপনার প্রদত্ত খতিয়ান, দাগ ও নথিপত্র পুঙ্খানুপুঙ্খ পরীক্ষা করবে।</p>
+                            <p class="text-sm text-gray-600 mt-1" data-en="Our experienced team will thoroughly examine your provided Khatian, Dag, and documents.">আমাদের অভিজ্ঞ টিম আপনার প্রদত্ত খতিয়ান, দাগ ও নথিপত্র পুঙ্খানুপুঙ্খ পরীক্ষা করবে।</p>
                         </div>
 
                         <!-- Step 3 -->
-                        <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
-                            <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
-                                ৩
+                        <div class="relative bg-gray-50 p-5 rounded-xl border border-gray-100 flex flex-col">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 rounded-full bg-brand-deep text-brand-gold text-lg font-bold flex items-center justify-center shadow-sm">
+                                    ৩
+                                </div>
+                                <h3 class="font-bold text-base sm:text-lg text-gray-900 leading-tight" data-en="Advice & Planning">পরামর্শ ও পরিকল্পনা</h3>
                             </div>
-                            <h3 class="font-bold text-lg text-gray-900" data-en="Advice & Planning">পরামর্শ ও পরিকল্পনা</h3>
-                            <p class="text-xs text-gray-600" data-en="We will show you the appropriate solution path by talking directly to you on the phone or WhatsApp.">আমরা সরাসরি আপনার সাথে ফোনে বা হোয়াটসঅ্যাপে কথা বলে উপযুক্ত সমাধানের পথ দেখাব।</p>
+                            <p class="text-sm text-gray-600 mt-1" data-en="We will show you the appropriate solution path by talking directly to you on the phone or WhatsApp.">আমরা সরাসরি আপনার সাথে ফোনে বা হোয়াটসঅ্যাপে কথা বলে উপযুক্ত সমাধানের পথ দেখাব।</p>
                         </div>
 
                         <!-- Step 4 -->
-                        <div class="relative bg-gray-50 p-6 rounded-2xl border border-gray-100 text-center space-y-3">
-                            <div class="w-12 h-12 rounded-full bg-brand-deep text-brand-gold text-xl font-bold flex items-center justify-center mx-auto shadow-md">
-                                ৪
+                        <div class="relative bg-gray-50 p-5 rounded-xl border border-gray-100 flex flex-col">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 shrink-0 rounded-full bg-brand-deep text-brand-gold text-lg font-bold flex items-center justify-center shadow-sm">
+                                    ৪
+                                </div>
+                                <h3 class="font-bold text-base sm:text-lg text-gray-900 leading-tight" data-en="Work Completion">কাজ সম্পন্ন</h3>
                             </div>
-                            <h3 class="font-bold text-lg text-gray-900" data-en="Work Completion">কাজ সম্পন্ন</h3>
-                            <p class="text-xs text-gray-600" data-en="All steps will be completed correctly while maintaining legal accuracy.">আইনি সঠিকতা বজায় রেখে সমস্ত ধাপ সঠিকভাবে সম্পন্ন করা হবে।</p>
+                            <p class="text-sm text-gray-600 mt-1" data-en="All steps will be completed correctly while maintaining legal accuracy.">আইনি সঠিকতা বজায় রেখে সমস্ত ধাপ সঠিকভাবে সম্পন্ন করা হবে।</p>
                         </div>
                     </div>
                 </div>
@@ -583,36 +615,45 @@
                     </div>
 
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                            <div class="h-48 bg-emerald-800 p-6 text-white flex flex-col justify-end relative">
-                                <i class="fa-solid fa-file-contract text-6xl text-white/10 absolute top-4 right-4"></i>
-                                <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Registration">রেজিস্ট্রেশন</span>
-                                <h4 class="text-xl font-bold" data-en="Deeds and Registry">দলিল ও রেজিস্ট্রি</h4>
+                        <!-- Card 1 -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col">
+                            <div class="bg-emerald-800 p-5 sm:p-6 text-white flex flex-col justify-start relative">
+                                <i class="fa-solid fa-file-contract text-5xl text-white/10 absolute top-4 right-4"></i>
+                                <div class="relative z-10 w-full">
+                                    <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded inline-block mb-2" data-en="Registration">রেজিস্ট্রেশন</span>
+                                    <h4 class="text-lg sm:text-xl font-bold" data-en="Deeds and Registry">দলিল ও রেজিস্ট্রি</h4>
+                                </div>
                             </div>
-                            <div class="p-5">
-                                <p class="text-xs text-gray-600" data-en="Reliable advice is given on proper deed sample preparation and sales-related draft document creation.">সঠিক দলিলের নমুনা প্রস্তুতি, বিক্রয় সংক্রান্ত খসড়া পত্র তৈরিতে নির্ভরযোগ্য পরামর্শ প্রদান করা হয়।</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                            <div class="h-48 bg-teal-800 p-6 text-white flex flex-col justify-end relative">
-                                <i class="fa-solid fa-compass-drafting text-6xl text-white/10 absolute top-4 right-4"></i>
-                                <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Amin Scale">আমিন স্কেল</span>
-                                <h4 class="text-xl font-bold" data-en="Land Survey and Map">জমি জরিপ ও ম্যাপ</h4>
-                            </div>
-                            <div class="p-5">
-                                <p class="text-xs text-gray-600" data-en="Measurement by experienced Amin and accurate boundary creation based on Mouza Map.">মৌজা ম্যাপের ভিত্তিতে অভিজ্ঞ আমিন দ্বারা পরিমাপ এবং নিখুঁত সীমারেখা তৈরি।</p>
+                            <div class="p-4 sm:p-5 flex-grow">
+                                <p class="text-sm text-gray-600 leading-relaxed" data-en="Reliable advice is given on proper deed sample preparation and sales-related draft document creation.">সঠিক দলিলের নমুনা প্রস্তুতি, বিক্রয় সংক্রান্ত খসড়া পত্র তৈরিতে নির্ভরযোগ্য পরামর্শ প্রদান করা হয়।</p>
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
-                            <div class="h-48 bg-emerald-900 p-6 text-white flex flex-col justify-end relative">
-                                <i class="fa-solid fa-building-circle-check text-6xl text-white/10 absolute top-4 right-4"></i>
-                                <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded w-max mb-2" data-en="Mutation">মিউটেশন</span>
-                                <h4 class="text-xl font-bold" data-en="Online Ledger Mutation">অনলাইন খতিয়ান নামজারি</h4>
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col">
+                            <div class="bg-teal-800 p-5 sm:p-6 text-white flex flex-col justify-start relative">
+                                <i class="fa-solid fa-compass-drafting text-5xl text-white/10 absolute top-4 right-4"></i>
+                                <div class="relative z-10 w-full">
+                                    <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded inline-block mb-2" data-en="Amin Scale">আমিন স্কেল</span>
+                                    <h4 class="text-lg sm:text-xl font-bold" data-en="Land Survey and Map">জমি জরিপ ও ম্যাপ</h4>
+                                </div>
                             </div>
-                            <div class="p-5">
-                                <p class="text-xs text-gray-600" data-en="Accurate process of correctly getting your name in Dag and Khatian in official records.">সরকারি রেকর্ডে দাগ ও খতিয়ানে নিজের নাম সঠিকভাবে তোলার নিশ্চিত প্রক্রিয়া।</p>
+                            <div class="p-4 sm:p-5 flex-grow">
+                                <p class="text-sm text-gray-600 leading-relaxed" data-en="Measurement by experienced Amin and accurate boundary creation based on Mouza Map.">মৌজা ম্যাপের ভিত্তিতে অভিজ্ঞ আমিন দ্বারা পরিমাপ এবং নিখুঁত সীমারেখা তৈরি।</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col">
+                            <div class="bg-emerald-900 p-5 sm:p-6 text-white flex flex-col justify-start relative">
+                                <i class="fa-solid fa-building-circle-check text-5xl text-white/10 absolute top-4 right-4"></i>
+                                <div class="relative z-10 w-full">
+                                    <span class="bg-brand-gold text-gray-900 text-xs font-bold px-2.5 py-1 rounded inline-block mb-2" data-en="Mutation">মিউটেশন</span>
+                                    <h4 class="text-lg sm:text-xl font-bold" data-en="Online Ledger Mutation">অনলাইন খতিয়ান নামজারি</h4>
+                                </div>
+                            </div>
+                            <div class="p-4 sm:p-5 flex-grow">
+                                <p class="text-sm text-gray-600 leading-relaxed" data-en="Accurate process of correctly getting your name in Dag and Khatian in official records.">সরকারি রেকর্ডে দাগ ও খতিয়ানে নিজের নাম সঠিকভাবে তোলার নিশ্চিত প্রক্রিয়া।</p>
                             </div>
                         </div>
                     </div>
@@ -631,19 +672,16 @@
 
                         <form id="fullInquiryForm" onsubmit="handleFullInquiry(event)" class="space-y-6">
                             <div class="grid md:grid-cols-2 gap-6">
-                                <!-- Name -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Your Name *">আপনার নাম <span class="text-red-500">*</span></label>
                                     <input type="text" id="inqName" required oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সম্পূর্ণ নাম লিখুন" data-en-placeholder="e.g. Sajjad Hossain">
                                 </div>
 
-                                <!-- Phone -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Mobile Number *">মোবাইল নম্বর <span class="text-red-500">*</span></label>
                                     <input type="tel" id="inqPhone" required maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="১১ সংখ্যার মোবাইল নম্বর" data-en-placeholder="e.g. 01712345678">
                                 </div>
 
-                                <!-- Service Select -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Select Service *">পরিষেবা নির্বাচন করুন <span class="text-red-500">*</span></label>
                                     <select id="inqService" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white">
@@ -659,38 +697,32 @@
                                     </select>
                                 </div>
 
-                                <!-- District -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="District">জেলা (District)</label>
                                     <input type="text" id="inqDistrict" oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: মুন্সীগঞ্জ, ইত্যাদি" data-en-placeholder="e.g. Munshiganj">
                                 </div>
 
-                                <!-- Thana -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Thana / Block">থানা / ব্লক (Thana/Block)</label>
                                     <input type="text" id="inqThana" oninput="this.value = this.value.replace(/[0-9০-৯]/g, '')" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: গজারিয়া" data-en-placeholder="e.g. Gazaria">
                                 </div>
 
-                                <!-- Mouza -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Mouza & JL No">মৌজা ও জে.এল নম্বর (Mouza & JL No)</label>
                                     <input type="text" id="inqMouza" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: রায়পুর (JL 45)" data-en-placeholder="e.g. Raipur (JL 45)">
                                 </div>
 
-                                <!-- LR Dag -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="LR Dag No">LR দাগ নম্বর (Dag No)</label>
                                     <input type="text" id="inqDag" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: ১২৩৪" data-en-placeholder="e.g. 1234">
                                 </div>
 
-                                <!-- Khatian -->
                                 <div>
                                     <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Khatian No">খতিয়ান নম্বর (Khatian No)</label>
                                     <input type="text" id="inqKhatian" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="উদা: ৫৬৭" data-en-placeholder="e.g. 567">
                                 </div>
                             </div>
 
-                            <!-- Details Message -->
                             <div>
                                 <label class="block text-sm font-bold text-gray-700 mb-1" data-en="Detailed Description or Problem">বিস্তারিত বিবরণ বা সমস্যা</label>
                                 <textarea id="inqDetails" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-emerald outline-none text-sm bg-white" placeholder="আপনার সমস্যা বা প্রয়োজনীয়তা সংক্ষেপে লিখুন..." data-en-placeholder="Write details of your problem or needs here..."></textarea>
@@ -715,7 +747,6 @@
                     </div>
 
                     <div class="grid lg:grid-cols-2 gap-8 items-stretch">
-                        <!-- Phone Card with Two Numbers -->
                         <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center">
                             <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-4">
                                 <i class="fa-solid fa-phone-volume"></i>
@@ -723,14 +754,12 @@
                             <h4 class="text-xl font-bold text-gray-900 mb-2" data-en="Call Us">ফোন করুন</h4>
                             <p class="text-sm text-gray-500 mb-4" data-en="Talk directly on the phone call to get advice">পরামর্শ পেতে সরাসরি ফোন কেই কথা বলুন</p>
                             
-                            <!-- Two Numbers Layout: Side by side on Desktop, Stacked on Mobile -->
                             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 w-full">
                                 <a href="tel:+8801302601212" class="text-base sm:text-lg font-bold text-brand-emerald hover:underline bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100 w-full sm:w-auto">01302601212</a>
                                 <a href="tel:+8801303072749" class="text-base sm:text-lg font-bold text-brand-emerald hover:underline bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100 w-full sm:w-auto">01303072749</a>
                             </div>
                         </div>
 
-                        <!-- Email Card -->
                         <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center">
                             <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mb-4">
                                 <i class="fa-solid fa-envelope-open-text"></i>
@@ -741,7 +770,6 @@
                         </div>
                     </div>
 
-                    <!-- Combined Single Card Container for Both Offices (Desktop: Side by Side, Mobile: Stacked) -->
                     <div class="bg-white p-8 sm:p-10 rounded-2xl border border-gray-100 shadow-sm mt-8 text-center">
                         <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl mx-auto mb-4">
                             <i class="fa-solid fa-location-dot"></i>
@@ -749,14 +777,12 @@
                         <h4 class="text-2xl font-bold text-gray-900 mb-8" data-en="Office Addresses">অফিসের ঠিকানা</h4>
                         
                         <div class="grid md:grid-cols-2 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-                            <!-- Office 1 -->
                             <div class="pt-6 md:pt-0 flex flex-col items-center text-center">
                                 <h5 class="text-xl font-bold text-brand-emerald mb-2" data-en="Office 1">অফিস ১</h5>
                                 <p class="text-sm text-gray-700 font-medium mb-3" data-en="Sonali Market, Gazaria">সোনালী মার্কেট, গজারিয়া</p>
                                 <span class="text-xs font-semibold bg-emerald-50 text-brand-emerald px-3 py-1.5 rounded-full border border-emerald-100" data-en="9 AM - 5 PM">সকাল ৯ - বিকাল ৫ টা</span>
                             </div>
 
-                            <!-- Office 2 -->
                             <div class="pt-8 md:pt-0 flex flex-col items-center text-center">
                                 <h5 class="text-xl font-bold text-brand-emerald mb-2" data-en="Office 2">অফিস ২</h5>
                                 <p class="text-sm text-gray-700 font-medium mb-3" data-en="Bhaterchar Bazar, Madhya Bhaterchar, Gazaria">ভাটেরচর বাজার, মধ্যে ভাটেরচর, গজারিয়া</p>
@@ -768,7 +794,7 @@
             </section>
         </div>
 
-        <!-- Privacy Policy Section (Hidden by Default, opens at /privacy-policy URL) -->
+        <!-- Privacy Policy Section -->
         <section id="privacy-policy" class="hidden py-20 bg-white border-t border-gray-100">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="bg-gray-50 rounded-3xl p-6 sm:p-12 border border-gray-200 shadow-sm space-y-6">
@@ -844,11 +870,8 @@
     <footer class="bg-brand-deep text-white border-t border-emerald-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
             
-            <!-- Desktop Layout: 4 Columns (Same as original) -->
-            <!-- Mobile Layout: Quick Links on Left, Urgent Contact on Right. Main Services hidden on Mobile, fully visible on Desktop. -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4 items-start">
                 
-                <!-- Brand Info (Spans full width on mobile or structured cleanly) -->
                 <div class="col-span-2 md:col-span-1 space-y-3">
                     <div class="flex items-center gap-3">
                         <div class="w-[45px] h-[45px] sm:w-[52px] sm:h-[52px] shrink-0 rounded-lg bg-white text-gray-900 flex items-center justify-center font-bold overflow-hidden">
@@ -861,7 +884,6 @@
                     </p>
                 </div>
 
-                <!-- Quick Links -->
                 <div class="col-span-1 md:col-span-1">
                     <h4 class="text-sm sm:text-base font-bold text-brand-gold mb-3 uppercase tracking-wider" data-en="Quick Links">দ্রুত লিঙ্ক</h4>
                     <ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-300">
@@ -873,7 +895,6 @@
                     </ul>
                 </div>
 
-                <!-- Main Services: Hidden on mobile (md:block ensures it only shows on desktop like original) -->
                 <div class="hidden md:block md:col-span-1">
                     <h4 class="text-base font-bold text-brand-gold mb-4 uppercase tracking-wider" data-en="Main Services">প্রধান সেবা</h4>
                     <ul class="space-y-2 text-sm text-gray-300">
@@ -884,19 +905,16 @@
                     </ul>
                 </div>
 
-                <!-- Urgent Contact & Social (Sits on the right side of Quick Links on mobile due to grid layout) -->
                 <div class="col-span-1 md:col-span-1">
                     <h4 class="text-sm sm:text-base font-bold text-brand-gold mb-3 uppercase tracking-wider" data-en="Urgent Contact">
                         জরুরি যোগাযোগ
                     </h4>
 
-                    <!-- Clickable English Phone Numbers -->
                     <div class="space-y-1 mb-2 text-xs sm:text-sm text-gray-300">
                         <p><i class="fa-solid fa-phone text-brand-gold mr-1.5"></i><a href="tel:+8801302601212" class="hover:text-brand-gold transition">01302601212</a></p>
                         <p><i class="fa-solid fa-phone text-brand-gold mr-1.5"></i><a href="tel:+8801303072749" class="hover:text-brand-gold transition">01303072749</a></p>
                     </div>
 
-                    <!-- Clickable Email Address -->
                     <p class="text-xs sm:text-sm text-gray-300 mb-3 break-all">
                         <i class="fa-solid fa-envelope text-brand-gold mr-1.5"></i>
                         <a href="mailto:lsfcgazaria@gmail.com" class="hover:text-brand-gold transition-colors duration-300">
@@ -904,7 +922,6 @@
                         </a>
                     </p>
 
-                    <!-- WhatsApp Button -->
                     <a href="https://wa.me/8801302601212" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] sm:text-xs font-bold transition">
                         <i class="fa-brands fa-whatsapp"></i>
                         <span data-en="WhatsApp Chat">হোয়াটসঅ্যাপ চ্যাট</span>
@@ -912,7 +929,6 @@
                 </div>
             </div>
 
-            <!-- Copyright and Developer Credit (Vertical Centered Alignment) -->
             <div class="pt-4 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-2">
                 <p data-en="© 2026 Gazaria Land Service. All Rights Reserved.">© 2026 গজারিয়া ভূমি সেবা. সর্বস্বত্ব সংরক্ষিত।</p>
 
@@ -964,7 +980,6 @@
 
     <!-- JavaScript Logic -->
     <script>
-        // Smooth scroll and Clean URL routing without hash (#) including Privacy Policy
         function navigateTo(event, targetId) {
             if (event) event.preventDefault();
             
@@ -976,7 +991,6 @@
                 if (privacyPolicy) privacyPolicy.classList.remove('hidden');
                 window.history.pushState({ target: 'privacy-policy' }, '', '/privacy-policy');
                 
-                // Force instant scroll to top
                 document.documentElement.style.scrollBehavior = 'auto';
                 window.scrollTo(0, 0);
                 document.documentElement.style.scrollBehavior = '';
@@ -997,7 +1011,6 @@
             }
         }
 
-        // Handle browser back/forward buttons and page reload based on pathname
         window.addEventListener('popstate', (event) => {
             let path = window.location.pathname.replace('/', '').trim();
             if (path === 'privacy-policy') {
@@ -1008,7 +1021,6 @@
             }
         });
 
-        // On page load, check if URL has a path and handle routing accordingly
         document.addEventListener('DOMContentLoaded', () => {
             let path = window.location.pathname.replace('/', '').trim();
             if (path === 'privacy-policy') {
@@ -1024,7 +1036,6 @@
             }
         });
 
-        // Mobile Navigation Toggle
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
@@ -1032,7 +1043,6 @@
 
         document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
 
-        // Modal Handlers
         function openModal() {
             document.getElementById('inquiryModal').classList.remove('hidden');
         }
@@ -1041,7 +1051,6 @@
             document.getElementById('inquiryModal').classList.add('hidden');
         }
 
-        // Auto Select Service into Main Inquiry Form & Scroll
         function selectServiceInForm(serviceName) {
             const selectEl = document.getElementById('inqService');
             if (selectEl) {
@@ -1050,13 +1059,11 @@
             navigateTo(null, 'inquiry');
         }
 
-        // Validate 11-digit Bangladeshi mobile number starting with 01
         function validatePhoneNumber(phone) {
             const phoneRegex = /^01[0-9]{9}$/;
             return phoneRegex.test(phone);
         }
 
-        // Get dynamic alert message based on current selected language
         function getPhoneAlertMessage() {
             const currentLang = document.documentElement.lang;
             if (currentLang === 'en') {
@@ -1066,7 +1073,6 @@
             }
         }
 
-        // Hero Quick Form Submission
         function submitQuickHeroForm(e) {
             e.preventDefault();
             const name = document.getElementById('heroName').value.trim();
@@ -1084,7 +1090,6 @@
             window.open(whatsappUrl, '_blank');
         }
 
-        // Full Detailed Inquiry Form Submission
         function handleFullInquiry(e) {
             e.preventDefault();
             const name = document.getElementById('inqName').value.trim();
@@ -1117,7 +1122,6 @@
             window.open(whatsappUrl, '_blank');
         }
 
-        // Fast Modal Form Submission
         function submitModalForm(e) {
             e.preventDefault();
             const name = document.getElementById('modalName').value.trim();
@@ -1136,7 +1140,6 @@
             window.open(whatsappUrl, '_blank');
         }
 
-        // Language Switching Logic (Default is Bengali)
         function setLanguage(lang) {
             const elements = document.querySelectorAll('[data-en]');
             const placeholders = document.querySelectorAll('[data-en-placeholder]');
@@ -1164,7 +1167,6 @@
                     btnEnMobile.classList.remove('text-gray-600');
                 }
 
-                // Title, Meta & OG update
                 if (siteTitle && siteTitle.hasAttribute('data-en')) {
                     if (!siteTitle.hasAttribute('data-bn')) siteTitle.setAttribute('data-bn', siteTitle.innerText);
                     siteTitle.innerText = siteTitle.getAttribute('data-en');
@@ -1218,7 +1220,6 @@
                     btnBnMobile.classList.remove('text-gray-600');
                 }
 
-                // Title, Meta & OG reset
                 if (siteTitle && siteTitle.hasAttribute('data-bn')) {
                     siteTitle.innerText = siteTitle.getAttribute('data-bn');
                 }
